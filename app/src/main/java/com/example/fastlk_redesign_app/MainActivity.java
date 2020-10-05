@@ -12,6 +12,8 @@ public class MainActivity extends AppCompatActivity {
 private ImageView propIv;
 private Button postAdBtn;
 
+    ImageView animals;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +33,15 @@ private Button postAdBtn;
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, SelectAdTypeActivity.class));
+            }
+        });
+
+        animals = findViewById(R.id.imageViewAnimal);
+        animals.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, AnimalsScroll.class);
+                startActivity(intent);
             }
         });
     }

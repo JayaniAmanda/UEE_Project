@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".AllAnimalsDetails">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar_default"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-2dp" />
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="160dp"
+        android:layout_height="701dp"
+        android:background="#68B8F8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/Animals_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="100px"
+            android:paddingTop="50px"
+            android:text="Pets"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/Animal_Foods_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="100px"
+            android:paddingTop="150px"
+            android:text="Animal Foods"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/Veterinary_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="100px"
+            android:paddingTop="250px"
+            android:text="Veterinary"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/Accessories_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="100px"
+            android:paddingTop="350px"
+            android:text="Accessories"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+    </com.google.android.material.navigation.NavigationView>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="90dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.062"
+        app:srcCompat="@drawable/labby" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="88dp"
+        android:layout_height="79dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.02"
+        app:srcCompat="@drawable/husky" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="86dp"
+        android:layout_height="87dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.034"
+        app:srcCompat="@drawable/american_rabbit" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="86dp"
+        android:layout_height="83dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="0.049"
+        app:srcCompat="@drawable/persian" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="86dp"
+        android:layout_height="88dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.056"
+        app:srcCompat="@drawable/cockatoos" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="93dp"
+        android:layout_height="88dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:layout_constraintVertical_bias="0.094"
+        app:srcCompat="@drawable/golden" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="91dp"
+        android:layout_height="89dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:layout_constraintVertical_bias="0.448"
+        app:srcCompat="@drawable/miniloop" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Labrador Puppy"
+        android:textColor="#0C0C0C"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.313"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Husky Puppy"
+        android:textColor="#0C0C0C"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.234"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.074" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="American rabbit"
+        android:textColor="#0C0C0C"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.318"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.094" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Persian Kitten"
+        android:textColor="#0C0C0C"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.276"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:layout_constraintVertical_bias="0.132" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cockatoo"
+        android:textColor="#0C0C0C"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.188"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:layout_constraintVertical_bias="0.161" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mini Lop"
+        android:textColor="#0C0C0C"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.188"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:layout_constraintVertical_bias="0.743" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Golden Retriever Puppy"
+        android:textColor="#0C0C0C"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView22"
+        app:layout_constraintVertical_bias="0.14" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animals,Colombo"
+        android:textColor="#EC9C26"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.013" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animals,Kandy"
+        android:textColor="#EC9C26"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.263"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.014" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animals,Nuwaraeliya"
+        android:textColor="#EC9C26"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animals,Kurunegala"
+        android:textColor="#EC9C26"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:layout_constraintVertical_bias="0.032" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animals,Galle"
+        android:textColor="#EC9C26"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.243"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:layout_constraintVertical_bias="0.294" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animals,Badulla"
+        android:textColor="#EC9C26"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.323"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:layout_constraintVertical_bias="0.84" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animals,Malabe"
+        android:textColor="#EC9C26"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView23"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="25,000"
+        android:textColor="#045707"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.263" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="65,000"
+        android:textColor="#045707"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.165"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.016" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15,000"
+        android:textColor="#045707"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="18,000"
+        android:textColor="#045707"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:layout_constraintVertical_bias="0.032" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10,000"
+        android:textColor="#045707"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.165"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView21"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15,000"
+        android:textColor="#045707"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.165"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView21"
+        app:layout_constraintVertical_bias="0.866" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="35,000"
+        android:textColor="#045707"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView21"
+        app:layout_constraintVertical_bias="0.447" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
