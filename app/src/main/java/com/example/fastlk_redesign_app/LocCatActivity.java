@@ -15,7 +15,7 @@ public class LocCatActivity extends AppCompatActivity {
     ArrayAdapter<String> adapter;
     private Button conBtn;
     //int count;
-    String[] locationArr;
+    //String[] locationArr;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
