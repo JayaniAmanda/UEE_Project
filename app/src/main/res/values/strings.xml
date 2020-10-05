@@ -1,3 +1,132 @@
 <resources>
     <string name="app_name">Fast.lk_redesign_app</string>
+    <string name="name">Name*</string>
+    <string name="email">Email*</string>
+    <string name="phone">Contact No*</string>
+    <string name="password">Password*</string>
+    <string name="confirm_password">Confirm Password*</string>
+    <string name="signup">Sign Up</string>
+    <string name="name_err">Enter a valid name</string>
+    <string name="email_err">Enter a valid email</string>
+    <string name="phone_err">Enter a valid contact number</string>
+    <string name="pwd_err">The password should contain at least 8 characters, including at least one lower case letter, one upper case letter, one number and one punctuation mark</string>
+    <string name="con_pwd_err">Password does not match</string>
+    <string name="create_new_pwd">Create a new password</string>
+    <string name="new_pwd_info">Enter the email address you used when you created the ad or account. You will receive an email with the information you need to change your password.</string>
+    <string name="reset_pwd">Reset Password</string>
+    <string name="incorrect_email_err">Enter the email address you used when you created the ad or account</string>
+    <string name="sell">Sell an item or service</string>
+    <string name="add_photos">Add photos (limited to 5)</string>
+    <string name="add">+</string>
+    <string name="condition">Condition</string>
+    <string name="trim">Trim (optional)</string>
+    <string name="model_yr">Model Year</string>
+    <string name="used">Used</string>
+    <string name="new_">New</string>
+    <string name="reconditioned">Reconditioned</string>
+    <string name="post_ad">Post Ad</string>
+    <string name="mileage">Mileage (km)</string>
+    <string name="engine_cap">Engine Capacity</string>
+    <string name="des">Description</string>
+    <string name="negotiatable">Negotiatable</string>
+    <string name="price">Price*</string>
+    <string name="name_req_err">Name is required</string>
+    <string name="email_req_err">Email is required</string>
+    <string name="phone_req_err">Contact no is required</string>
+    <string name="pwd_req_err">Password is required</string>
+    <string name="model_yr_error">Model year is invalid</string>
+    <string name="mileage_err">Mileage is invalid</string>
+    <string name="eng_cap_err">Engine capacity is invalid</string>
+    <string name="price_err">Price is invalid</string>
+    <string name="des_err">Description is required</string>
+    <string name="cat_sel">Choose Category</string>
+    <string name="sub_cat">Choose Subcategory</string>
+    <string name="loc_sel">Choose Location</string>
+    <string name="sub_loc">Choose Sublocation</string>
+    <string name="con">Continue</string>
+    <string name="cat">Category</string>
+    <string name="loc">Location</string>
+    <string-array name="trans">
+        <item>Manual</item>
+        <item>Automatic</item>
+        <item>Tiptronic</item>
+        <item>Other transmission</item>
+    </string-array>
+    <string-array name="fuel_ty">
+        <item>Diesel</item>
+        <item>Petrol</item>
+        <item>CNG</item>
+        <item>Hybrid</item>
+        <item>Electric</item>
+        <item>Other fuel type</item>
+    </string-array>
+    <string-array name="brands">
+        <item>Toyota</item>
+        <item>BMW</item>
+        <item>Suzuki</item>
+        <item>Nissan</item>
+        <item>Hyhundai</item>
+        <item>Honda</item>
+        <item>Other brand</item>
+    </string-array>
+    <string-array name="toyota_models">
+        <item>Allion</item>
+        <item>Aqua</item>
+        <item>Corolla</item>
+        <item>Axio</item>
+        <item>CHR</item>
+        <item>Premio</item>
+        <item>Other model</item>
+    </string-array>
+    <string-array name="bmw_models">
+        <item>120d</item>
+        <item>120i</item>
+        <item>X1</item>
+        <item>X3</item>
+        <item>X5</item>
+        <item>i3</item>
+        <item>i8</item>
+        <item>Other model</item>
+    </string-array>
+    <string-array name="categories">
+        <item>Property</item>
+        <item>Vehicle</item>
+        <item>Electronic</item>
+        <item>Animals</item>
+    </string-array>
+    <string-array name="vehicles">
+        <item>Cars</item>
+        <item>Motorbikes &amp; Scooters</item>
+        <item>Three Wheelers</item>
+        <item>Push Cycles</item>
+        <item>Vans, Buses &amp; Lorries</item>
+    </string-array>
+    <string-array name="properties">
+        <item>Land</item>
+        <item>Houses</item>
+        <item>Apartments</item>
+    </string-array>
+    <string-array name="locations">
+        <item>Colombo</item>
+        <item>Matara</item>
+        <item>Gampaha</item>
+        <item>Galle</item>
+        <item>Kalutara</item>
+        <item>Badulla</item>
+    </string-array>
+    <string-array name="colombo">
+        <item>Piliyandala</item>
+        <item>Maharagama</item>
+        <item>Moratuwa</item>
+        <item>Malabe</item>
+        <item>Kottawa</item>
+        <item>Colombo 10</item>
+    </string-array>
+    <string-array name="matara">
+        <item>Godagama</item>
+        <item>Weligama</item>
+        <item>Hakmana</item>
+        <item>Akurassa</item>
+        <item>Yatiyana</item>
+    </string-array>
 </resources>
