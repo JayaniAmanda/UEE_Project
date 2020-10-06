@@ -40,8 +40,8 @@ private Button postAdBtn;
         animals.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(MainActivity.this, AnimalsScroll.class);
-                //startActivity(intent);
+                Intent intent = new Intent(MainActivity.this, AllAnimalsDetails.class);
+                startActivity(intent);
             }
         });
     }
