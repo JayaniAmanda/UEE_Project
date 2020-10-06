@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 private ImageView propIv;
@@ -41,6 +42,15 @@ private Button postAdBtn;
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, AllAnimalsDetails.class);
+                startActivity(intent);
+            }
+        });
+
+        TextView feedback = findViewById(R.id.textViewfeedback);
+        feedback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Feedback.class);
                 startActivity(intent);
             }
         });

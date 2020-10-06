@@ -4,13 +4,16 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -160,6 +163,25 @@ public class AllAnimalsDetails extends AppCompatActivity {
                 });
                 builder.setView(view);
                 builder.create().show();
+            }
+        });
+
+
+        TextView feedback = findViewById(R.id.textViewfeedback);
+        feedback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AllAnimalsDetails.this, Feedback.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageView home = findViewById(R.id.imageView6);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AllAnimalsDetails.this, MainActivity.class);
+                startActivity(intent);
             }
         });
 

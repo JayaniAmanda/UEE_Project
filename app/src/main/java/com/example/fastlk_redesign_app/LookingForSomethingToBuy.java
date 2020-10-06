@@ -8,7 +8,9 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 public class LookingForSomethingToBuy extends AppCompatActivity {
 
@@ -81,7 +83,26 @@ public class LookingForSomethingToBuy extends AppCompatActivity {
         conBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), SellActivity.class));
+                startActivity(new Intent(getApplicationContext(), BuySomethingForm.class));
+            }
+        });
+
+
+        TextView feedback = findViewById(R.id.textViewfeedback);
+        feedback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LookingForSomethingToBuy.this, Feedback.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageView home = findViewById(R.id.imageView6);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LookingForSomethingToBuy.this, MainActivity.class);
+                startActivity(intent);
             }
         });
 
