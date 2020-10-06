@@ -52,7 +52,7 @@
         app:layout_constraintVertical_bias="0.083" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textViewfeedback"
         android:layout_width="100dp"
         android:layout_height="30dp"
         android:text="Feedback"

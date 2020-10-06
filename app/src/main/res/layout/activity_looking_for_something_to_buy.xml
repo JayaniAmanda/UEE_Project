@@ -143,7 +143,7 @@
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginBottom="16dp"
-        android:background="#3046C3"
+        android:background="@drawable/btn_submit"
         android:text="@string/con"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"

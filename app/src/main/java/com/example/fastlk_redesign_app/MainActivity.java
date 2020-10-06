@@ -69,5 +69,14 @@ public class MainActivity extends AppCompatActivity {
                 System.out.println(signUpTv.getText());
             }
         });
+
+        TextView feedback = findViewById(R.id.textViewfeedback);
+        feedback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Feedback.class);
+                startActivity(intent);
+            }
+        });
     }
 }

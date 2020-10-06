@@ -28,7 +28,7 @@
         app:layout_constraintVertical_bias="0.169" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textViewfeedback"
         android:layout_width="202dp"
         android:layout_height="60dp"
         android:text="Post an ad within 2 minutes and save your time on buying and selling"
@@ -61,10 +61,10 @@
         android:contentDescription="TODO"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.105"
+        app:layout_constraintTop_toBottomOf="@+id/textViewfeedback"
+        app:layout_constraintVertical_bias="0.107"
         app:srcCompat="@drawable/ic_baseline_search_24"
         tools:ignore="VectorDrawableCompat" />
 
@@ -77,10 +77,10 @@
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintHorizontal_bias="0.312"
         app:layout_constraintStart_toEndOf="@+id/imageButton4"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.107" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewfeedback"
+        app:layout_constraintVertical_bias="0.091" />
 
     <TextView
         android:id="@+id/signup_tb"
