@@ -24,7 +24,7 @@ public class SignUpActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("Sign Up");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        signUpBtn = findViewById(R.id.signup_btn);
+        signUpBtn = findViewById(R.id.signup_tb);
         awesomeValidation = new AwesomeValidation(ValidationStyle.COLORATION);
 
         String regexName = "[a-zA-Z\\s]+";
