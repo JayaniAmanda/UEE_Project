@@ -21,5 +21,13 @@ public class SelectAdTypeActivity extends AppCompatActivity {
                 startActivity(new Intent(SelectAdTypeActivity.this, LocCatActivity.class));
             }
         });
+
+        Button buysomething = findViewById(R.id.looking_something_btn);
+        buysomething.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SelectAdTypeActivity.this, LookingForSomethingToBuy.class));
+            }
+        });
     }
 }

@@ -141,4 +141,9 @@
         <item>Veterinary</item>
         <item>Accessories</item>
     </string-array>
+    <string-array name="categoriesone">
+        <item>Vehicle</item>
+        <item>Electronic</item>
+        <item>Animals</item>
+    </string-array>
 </resources>
