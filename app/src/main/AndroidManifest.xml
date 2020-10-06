@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Feedback"></activity>
+        <activity android:name=".SearchCategories"></activity>
+        <activity android:name=".Feedback" />
         <activity android:name=".BuySomethingForm" />
         <activity android:name=".LookingForSomethingToBuy" />
         <activity android:name=".DogDetails" />
