@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -51,6 +52,15 @@ private Button postAdBtn;
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, Feedback.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton search = findViewById(R.id.imageButton4);
+        search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SearchCategories.class);
                 startActivity(intent);
             }
         });
