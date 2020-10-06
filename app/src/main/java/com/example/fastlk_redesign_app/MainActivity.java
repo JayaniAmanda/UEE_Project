@@ -13,9 +13,6 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     private ImageView propIv;
     private Button postAdBtn;
-    private TextView signUpTv;
-
-
     ImageView animals;
 
     @Override
@@ -49,33 +46,20 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        View view = getLayoutInflater().inflate(R.layout.toolbar_default, null);
-        signUpTv = view.findViewById(R.id.signup_tb);
-        ImageView iv = view.findViewById(R.id.imageView6);
-        iv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.i("huui", "onClick: ");
-                System.out.println(signUpTv.getText());
-            }
-        });
-        Log.i("hi", "onClick: ");
-        //System.out.println(signUpTv.getText());
-        signUpTv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, SignUpActivity.class));
-                Log.i("hii", "onClick: ");
-                System.out.println(signUpTv.getText());
-            }
-        });
-
         TextView feedback = findViewById(R.id.textViewfeedback);
         feedback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, Feedback.class);
                 startActivity(intent);
+            }
+        });
+
+        TextView signUpTb = findViewById(R.id.signup_tb);
+        signUpTb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity( new Intent(MainActivity.this, SignUpActivity.class));
             }
         });
     }

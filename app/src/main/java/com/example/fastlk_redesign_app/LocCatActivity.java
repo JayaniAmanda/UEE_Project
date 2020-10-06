@@ -8,7 +8,9 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 public class LocCatActivity extends AppCompatActivity {
     private Spinner catSp, subCatSp, locSp, subLocSp;
@@ -27,6 +29,24 @@ public class LocCatActivity extends AppCompatActivity {
         locSp = findViewById(R.id.loc_sp);
         subLocSp = findViewById(R.id.sub_loc_sp);
         conBtn = findViewById(R.id.ok_btn);
+
+        ImageView home = findViewById(R.id.imageView6);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LocCatActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        TextView feedback = findViewById(R.id.textViewfeedback);
+        feedback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LocCatActivity.this, Feedback.class);
+                startActivity(intent);
+            }
+        });
 
         setSpinner(catSp, R.array.categories);
 
@@ -84,6 +104,7 @@ public class LocCatActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), SellActivity.class));
             }
         });
+
     }
 
     public void setSpinner(Spinner spinner, int list){

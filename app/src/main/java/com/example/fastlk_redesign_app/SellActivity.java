@@ -2,13 +2,16 @@ package com.example.fastlk_redesign_app;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.basgeekball.awesomevalidation.AwesomeValidation;
@@ -39,6 +42,24 @@ public class SellActivity extends AppCompatActivity {
 //        mileageEt = findViewById(R.id.mileage_et);
 //        engCapEt = findViewById(R.id.engine_cap_et);
 //        priceEt = findViewById(R.id.price_et);
+
+        TextView feedback = findViewById(R.id.textViewfeedback);
+        feedback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SellActivity.this, Feedback.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageView home = findViewById(R.id.imageView6);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SellActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
         awesomeValidation = new AwesomeValidation(ValidationStyle.BASIC);
 

@@ -4,13 +4,16 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -31,8 +34,33 @@ public class AdsViewActivity extends AppCompatActivity {
         catBtn = findViewById(R.id.cat_btn);
         locBtn = findViewById(R.id.loc_btn);
 
-        ArrayList<Ad> ads = new ArrayList<>();
+        TextView signUpTb = findViewById(R.id.signup_tb);
+        signUpTb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity( new Intent(AdsViewActivity.this, SignUpActivity.class));
+            }
+        });
 
+        ImageView home = findViewById(R.id.imageView6);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AdsViewActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        TextView feedback = findViewById(R.id.textViewfeedback);
+        feedback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AdsViewActivity.this, Feedback.class);
+                startActivity(intent);
+            }
+        });
+
+        ArrayList<Ad> ads = new ArrayList<>();
         ads.add(new Ad(R.drawable.home, "Home", "Houses, Piliyandala", "Rs. 100,000"));
         ads.add(new Ad(R.drawable.home, "Home", "Houses, Piliyandala", "Rs. 100,000"));
         ads.add(new Ad(R.drawable.home, "Home", "Houses, Piliyandala", "Rs. 100,000"));
