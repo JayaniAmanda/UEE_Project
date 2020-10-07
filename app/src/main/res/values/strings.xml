@@ -46,6 +46,10 @@
     <string name="con">Continue</string>
     <string name="cat">Category</string>
     <string name="loc">Location</string>
+    <string name="ok">OK</string>
+    <string name="fuel_ty">Fuel Type</string>
+    <string name="fuel_ty_sel">Select Fuel Type(s)</string>
+    <string name="fuel_ty_err">Fuel type(s) is invalid</string>
     <string-array name="trans">
         <item>Manual</item>
         <item>Automatic</item>

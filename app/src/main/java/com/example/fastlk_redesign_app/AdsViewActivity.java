@@ -21,7 +21,7 @@ public class AdsViewActivity extends AppCompatActivity {
     private ListView adListView;
     private Button catBtn, locBtn;
     private Spinner dialogSp, dialog2Sp;
-    String[] vehicleArr, propArr, colomboArr, mataraArr;
+    String[] vehicleArr, propArr, colomboArr, mataraArr, locArr;
     int dialogSpPos;
     ArrayAdapter<String> adapter;
 
@@ -33,6 +33,12 @@ public class AdsViewActivity extends AppCompatActivity {
         adListView = findViewById(R.id.ads_lv);
         catBtn = findViewById(R.id.cat_btn);
         locBtn = findViewById(R.id.loc_btn);
+
+        vehicleArr = getResources().getStringArray(R.array.vehicles);
+        propArr = getResources().getStringArray(R.array.properties);
+        colomboArr = getResources().getStringArray(R.array.colombo);
+        mataraArr = getResources().getStringArray(R.array.matara);
+        locArr = getResources().getStringArray(R.array.locations);
 
         TextView signUpTb = findViewById(R.id.signup_tb);
         signUpTb.setOnClickListener(new View.OnClickListener() {
@@ -74,11 +80,6 @@ public class AdsViewActivity extends AppCompatActivity {
         AdAdapter adAdapter = new AdAdapter(this, R.layout.ad_row, ads);
         adListView.setAdapter(adAdapter);
 
-        //vehicleArr = getResources().getStringArray(R.array.vehicles);
-        propArr = getResources().getStringArray(R.array.properties);
-        colomboArr = getResources().getStringArray(R.array.colombo);
-        mataraArr = getResources().getStringArray(R.array.matara);
-
         catBtn.setText(propArr[0]);
         locBtn.setText(colomboArr[0]);
 
@@ -86,37 +87,15 @@ public class AdsViewActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(AdsViewActivity.this);
-                builder.setTitle("Select Sub Category");
+                builder.setTitle(R.string.sub_cat);
                 View view = getLayoutInflater().inflate(R.layout.spinner, null);
                 dialogSp = view.findViewById(R.id.dialog_sp);
-                //dialog2Sp = view.findViewById(R.id.dialog2_sp);
-                setSpinner(dialogSp, R.array.properties);
-//                dialogSp.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-//                    @Override
-//                    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-//                        if (position == 0){
-//                            setSpinner(dialog2Sp, R.array.properties);
-//                            dialogSpPos = 0;
-//                        } else if (position == 1){
-//                            setSpinner(dialog2Sp, R.array.vehicles);
-//                            dialogSpPos = 1;
-//                        }
-//                    }
-//
-//                    @Override
-//                    public void onNothingSelected(AdapterView<?> parent) {
-//
-//                    }
-//                });
+                setSpinner(dialogSp, propArr);
 
                 dialogSp.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                     @Override
                     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-//                        if (dialogSpPos == 0)
-                            //catBtn.setText(view.getContext().getText(position));
-                            catBtn.setText(propArr[position]);
-//                        else if (dialogSpPos == 1)
-//                            catBtn.setText(vehicleArr[position]);
+                        catBtn.setText(propArr[position]);
                     }
 
                     @Override
@@ -125,7 +104,7 @@ public class AdsViewActivity extends AppCompatActivity {
                     }
                 });
 
-                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
 
@@ -139,20 +118,20 @@ public class AdsViewActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(AdsViewActivity.this);
-                builder.setTitle("Select Location");
+                builder.setTitle(R.string.loc_sel);
                 View view = getLayoutInflater().inflate(R.layout.dialog_spinner, null);
                 dialogSp = view.findViewById(R.id.dialog_sp);
                 dialog2Sp = view.findViewById(R.id.dialog2_sp);
-                setSpinner(dialogSp, R.array.locations);
+                setSpinner(dialogSp, locArr);
 
                 dialogSp.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                     @Override
                     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                         if (position == 0){
-                            setSpinner(dialog2Sp, R.array.colombo);
+                            setSpinner(dialog2Sp, colomboArr);
                             dialogSpPos = 0;
                         } else if (position == 1){
-                            setSpinner(dialog2Sp, R.array.matara);
+                            setSpinner(dialog2Sp, mataraArr);
                             dialogSpPos = 1;
                         }
                     }
@@ -176,7 +155,7 @@ public class AdsViewActivity extends AppCompatActivity {
                     }
                 });
 
-                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
 
@@ -187,8 +166,8 @@ public class AdsViewActivity extends AppCompatActivity {
         });
     }
 
-    public void setSpinner(Spinner spinner, int list){
-        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, getResources().getStringArray(list));
+    public void setSpinner(Spinner spinner, String[] array){
+        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, array);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
     }
