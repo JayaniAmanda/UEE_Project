@@ -67,15 +67,13 @@ public class AdsViewActivity extends AppCompatActivity {
         });
 
         ArrayList<Ad> ads = new ArrayList<>();
-        ads.add(new Ad(R.drawable.home, "Home", "Houses, Piliyandala", "Rs. 100,000"));
-        ads.add(new Ad(R.drawable.home, "Home", "Houses, Piliyandala", "Rs. 100,000"));
-        ads.add(new Ad(R.drawable.home, "Home", "Houses, Piliyandala", "Rs. 100,000"));
-        ads.add(new Ad(R.drawable.home, "Home", "Houses, Piliyandala", "Rs. 100,000"));
-        ads.add(new Ad(R.drawable.home, "Home", "Houses, Piliyandala", "Rs. 100,000"));
-        ads.add(new Ad(R.drawable.home, "Home", "Houses, Piliyandala", "Rs. 100,000"));
-        ads.add(new Ad(R.drawable.home, "Home", "Houses, Piliyandala", "Rs. 100,000"));
-        ads.add(new Ad(R.drawable.home, "Home", "Houses, Piliyandala", "Rs. 100,000"));
-        ads.add(new Ad(R.drawable.home, "Home", "Houses, Piliyandala", "Rs. 100,000"));
+        ads.add(new Ad(R.drawable.house, "House with 3 bedrooms", "Houses, Piliyandala", "Rs. 100,000"));
+        ads.add(new Ad(R.drawable.house, "House with 3 bedrooms", "Houses, Piliyandala", "Rs. 100,000"));
+        ads.add(new Ad(R.drawable.house, "House with 3 bedrooms", "Houses, Piliyandala", "Rs. 100,000"));
+        ads.add(new Ad(R.drawable.house, "House with 3 bedrooms", "Houses, Piliyandala", "Rs. 100,000"));
+        ads.add(new Ad(R.drawable.house, "House with 3 bedrooms", "Houses, Piliyandala", "Rs. 100,000"));
+        ads.add(new Ad(R.drawable.house, "House with 3 bedrooms", "Houses, Piliyandala", "Rs. 100,000"));
+        ads.add(new Ad(R.drawable.house, "House with 3 bedrooms", "Houses, Piliyandala", "Rs. 100,000"));
 
         AdAdapter adAdapter = new AdAdapter(this, R.layout.ad_row, ads);
         adListView.setAdapter(adAdapter);
