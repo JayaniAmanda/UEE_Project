@@ -38,15 +38,15 @@ public class AllAnimalsDetails extends AppCompatActivity {
 
         ArrayList<Ad> ads = new ArrayList<>();
 
-        ads.add(new Ad(R.drawable.labby, "Labrador Puppy", "Dogs, Piliyandala", "Rs. 40,000"));
-        ads.add(new Ad(R.drawable.labby, "Labrador Puppy", "Dogs, Piliyandala", "Rs. 40,000"));
-        ads.add(new Ad(R.drawable.labby, "Labrador Puppy", "Dogs, Piliyandala", "Rs. 40,000"));
-        ads.add(new Ad(R.drawable.labby, "Labrador Puppy", "Dogs, Piliyandala", "Rs. 40,000"));
-        ads.add(new Ad(R.drawable.labby, "Labrador Puppy", "Dogs, Piliyandala", "Rs. 40,000"));
-        ads.add(new Ad(R.drawable.labby, "Labrador Puppy", "Dogs, Piliyandala", "Rs. 40,000"));
-        ads.add(new Ad(R.drawable.labby, "Labrador Puppy", "Dogs, Piliyandala", "Rs. 40,000"));
-        ads.add(new Ad(R.drawable.labby, "Labrador Puppy", "Dogs, Piliyandala", "Rs. 40,000"));
-        ads.add(new Ad(R.drawable.labby, "Labrador Puppy", "Dogs, Piliyandala", "Rs. 40,000"));
+        ads.add(new Ad(R.drawable.labby, "Puppy", "Dogs, Piliyandala", "Rs. 40,000"));
+        ads.add(new Ad(R.drawable.labby, "Puppy", "Dogs, Piliyandala", "Rs. 40,000"));
+        ads.add(new Ad(R.drawable.labby, "Puppy", "Dogs, Piliyandala", "Rs. 40,000"));
+        ads.add(new Ad(R.drawable.labby, "Puppy", "Dogs, Piliyandala", "Rs. 40,000"));
+        ads.add(new Ad(R.drawable.labby, "Puppy", "Dogs, Piliyandala", "Rs. 40,000"));
+        ads.add(new Ad(R.drawable.labby, "Puppy", "Dogs, Piliyandala", "Rs. 40,000"));
+        ads.add(new Ad(R.drawable.labby, "Puppy", "Dogs, Piliyandala", "Rs. 40,000"));
+        ads.add(new Ad(R.drawable.labby, "Puppy", "Dogs, Piliyandala", "Rs. 40,000"));
+        ads.add(new Ad(R.drawable.labby, "Puppy", "Dogs, Piliyandala", "Rs. 40,000"));
 
         AdAdapter adAdapter = new AdAdapter(this, R.layout.ad_row, ads);
         adListView.setAdapter(adAdapter);
