@@ -29,5 +29,13 @@ public class SelectAdTypeActivity extends AppCompatActivity {
                 startActivity(new Intent(SelectAdTypeActivity.this, LookingForSomethingToBuy.class));
             }
         });
+
+        Button offerproperty = findViewById(R.id.offer_property_btn);
+        offerproperty.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SelectAdTypeActivity.this, OfferAPropertyForRent.class));
+            }
+        });
     }
 }
