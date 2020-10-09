@@ -38,7 +38,7 @@ public class SignUpActivity extends AppCompatActivity {
             }
         });
 
-        ImageView home = findViewById(R.id.imageView6);
+        ImageView home = findViewById(R.id.home_iv);
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

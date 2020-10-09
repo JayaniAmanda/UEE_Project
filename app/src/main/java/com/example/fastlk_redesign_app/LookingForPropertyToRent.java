@@ -30,7 +30,7 @@ public class LookingForPropertyToRent extends AppCompatActivity {
         subLocSp = findViewById(R.id.sub_loc_sp);
         conBtn = findViewById(R.id.ok_btn);
         feedback = findViewById(R.id.textViewfeedback);
-        home = findViewById(R.id.imageView6);
+        home = findViewById(R.id.home_iv);
 
         setSpinner(catSp, R.array.categoriesone);
 

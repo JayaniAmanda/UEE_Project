@@ -29,7 +29,7 @@ public class SignInActivity extends AppCompatActivity {
         forgotPw = findViewById(R.id.textView15);
         signUp = findViewById(R.id.textView16);
         feedback = findViewById(R.id.textViewfeedback);
-        home = findViewById(R.id.imageView6);
+        home = findViewById(R.id.home_iv);
 
         awesomeValidation = new AwesomeValidation(ValidationStyle.COLORATION);
 

@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-private ImageView propIv, vehiIv;
+private ImageView propIv, vehiIv, elecIv;
 private Button postAdBtn, myAccBtn;
 
     ImageView animals, vehicles;
@@ -25,6 +25,8 @@ private Button postAdBtn, myAccBtn;
         postAdBtn = findViewById(R.id.post_ad_btn);
         vehiIv = findViewById(R.id.vehi_vi);
         myAccBtn = findViewById(R.id.myaccountbtn);
+        elecIv = findViewById(R.id.elect_iv);
+
 
         propIv.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -99,13 +101,13 @@ private Button postAdBtn, myAccBtn;
             }
         });
 
-        //ImageView electronics = findViewById(R.id.imageView6);
 
-        TextView electronics = findViewById(R.id.textView5);
+        //TextView electronics = findViewById(R.id.textView5);
 
-        electronics.setOnClickListener(new View.OnClickListener() {
+        elecIv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                System.out.println("hi");
                 startActivity(new Intent(MainActivity.this, ElectronicAdsViewActivity.class));
             }
         });

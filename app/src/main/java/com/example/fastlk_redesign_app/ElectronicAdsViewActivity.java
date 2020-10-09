@@ -40,7 +40,7 @@ public class ElectronicAdsViewActivity extends AppCompatActivity {
             mataraArr = getResources().getStringArray(R.array.matara);
             electronicArr = getResources().getStringArray(R.array.electronics);
             feedback = findViewById(R.id.textViewfeedback);
-            home = findViewById(R.id.imageView6);
+            home = findViewById(R.id.home_iv);
             signIn = findViewById(R.id.textView1);
 
             feedback.setOnClickListener(new View.OnClickListener() {

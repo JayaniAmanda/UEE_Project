@@ -23,9 +23,7 @@ import com.basgeekball.awesomevalidation.utility.RegexTemplate;
 import com.google.common.collect.Range;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Calendar;
-import java.util.Collections;
 
 public class SellActivity extends AppCompatActivity {
     private Spinner transSp, fuelTySp, brandSp, modelSp;
@@ -69,7 +67,7 @@ public class SellActivity extends AppCompatActivity {
             }
         });
 
-        ImageView home = findViewById(R.id.imageView6);
+        ImageView home = findViewById(R.id.home_iv);
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

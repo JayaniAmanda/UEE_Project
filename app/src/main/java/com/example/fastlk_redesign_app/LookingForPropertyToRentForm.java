@@ -25,7 +25,7 @@ public class LookingForPropertyToRentForm  extends AppCompatActivity{
 
 
             feedback = findViewById(R.id.textViewfeedback);
-            home = findViewById(R.id.imageView6);
+            home = findViewById(R.id.home_iv);
             submitBtn = findViewById(R.id.button2);
 
             feedback.setOnClickListener(new View.OnClickListener() {

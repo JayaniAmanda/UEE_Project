@@ -48,7 +48,7 @@ public class AdsViewActivity extends AppCompatActivity {
             }
         });
 
-        ImageView home = findViewById(R.id.imageView6);
+        ImageView home = findViewById(R.id.home_iv);
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -67,13 +67,13 @@ public class AdsViewActivity extends AppCompatActivity {
         });
 
         ArrayList<Ad> ads = new ArrayList<>();
-        ads.add(new Ad(R.drawable.house, "House with 3 bedrooms", "Houses, Piliyandala", "Rs. 100,000"));
-        ads.add(new Ad(R.drawable.house, "House with 3 bedrooms", "Houses, Piliyandala", "Rs. 100,000"));
-        ads.add(new Ad(R.drawable.house, "House with 3 bedrooms", "Houses, Piliyandala", "Rs. 100,000"));
-        ads.add(new Ad(R.drawable.house, "House with 3 bedrooms", "Houses, Piliyandala", "Rs. 100,000"));
-        ads.add(new Ad(R.drawable.house, "House with 3 bedrooms", "Houses, Piliyandala", "Rs. 100,000"));
-        ads.add(new Ad(R.drawable.house, "House with 3 bedrooms", "Houses, Piliyandala", "Rs. 100,000"));
-        ads.add(new Ad(R.drawable.house, "House with 3 bedrooms", "Houses, Piliyandala", "Rs. 100,000"));
+        ads.add(new Ad(R.drawable.house, "House for sale", "Houses, Piliyandala", "Rs. 100,000"));
+        ads.add(new Ad(R.drawable.house, "House for sale", "Houses, Piliyandala", "Rs. 100,000"));
+        ads.add(new Ad(R.drawable.house, "House for sale", "Houses, Piliyandala", "Rs. 100,000"));
+        ads.add(new Ad(R.drawable.house, "House for sale", "Houses, Piliyandala", "Rs. 100,000"));
+        ads.add(new Ad(R.drawable.house, "House for sale", "Houses, Piliyandala", "Rs. 100,000"));
+        ads.add(new Ad(R.drawable.house, "House for sale", "Houses, Piliyandala", "Rs. 100,000"));
+        ads.add(new Ad(R.drawable.house, "House for sale", "Houses, Piliyandala", "Rs. 100,000"));
 
         AdAdapter adAdapter = new AdAdapter(this, R.layout.ad_row, ads);
         adListView.setAdapter(adAdapter);
