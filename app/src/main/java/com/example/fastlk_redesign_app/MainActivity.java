@@ -14,7 +14,10 @@ public class MainActivity extends AppCompatActivity {
 private ImageView propIv;
 private Button postAdBtn;
 
+
+
     ImageView animals;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +27,7 @@ private Button postAdBtn;
         propIv = findViewById(R.id.prop_iv);
         postAdBtn = findViewById(R.id.post_ad_btn);
 
-        propIv.setOnClickListener(new View.OnClickListener() {
+        propIv .setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, AdsViewActivity.class));
@@ -56,6 +59,15 @@ private Button postAdBtn;
             }
         });
 
+        TextView signIn = findViewById(R.id.textView1);
+        signIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SignInActivity.class);
+                startActivity(intent);
+            }
+        });
+
         ImageButton search = findViewById(R.id.imageButton4);
         search.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,5 +76,18 @@ private Button postAdBtn;
                 startActivity(intent);
             }
         });
+
+        //ImageView electronics = findViewById(R.id.imageView6);
+
+        TextView electronics = findViewById(R.id.textView5);
+
+        electronics.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ElectronicAdsViewActivity.class));
+            }
+        });
+
+
     }
 }

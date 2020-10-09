@@ -6,6 +6,7 @@
     <string name="password">Password*</string>
     <string name="confirm_password">Confirm Password*</string>
     <string name="signup">Sign Up</string>
+    <string name="signin">Sign In</string>
     <string name="name_err">Enter a valid name</string>
     <string name="email_err">Enter a valid email</string>
     <string name="phone_err">Enter a valid contact number</string>
@@ -39,6 +40,8 @@
     <string name="eng_cap_err">Engine capacity is invalid</string>
     <string name="price_err">Price is invalid</string>
     <string name="des_err">Description is required</string>
+    <string name="title_req_err">Title is required</string>
+    <string name="location_req_err">Location is required</string>
     <string name="cat_sel">Choose Category</string>
     <string name="sub_cat">Choose Subcategory</string>
     <string name="loc_sel">Choose Location</string>
@@ -46,6 +49,10 @@
     <string name="con">Continue</string>
     <string name="cat">Category</string>
     <string name="loc">Location</string>
+    <string name="forgot_pw">Forgot Password?</string>
+    <string name="sign_up_msg">Dont have an account yet?</string>
+    <string name="sign_up_now">Sign up now!</string>
+    <string name="look_for_property_to_rent_title">Look for property to rent:</string>
     <string-array name="trans">
         <item>Manual</item>
         <item>Automatic</item>
@@ -100,6 +107,13 @@
         <item>Three Wheelers</item>
         <item>Push Cycles</item>
         <item>Vans, Buses &amp; Lorries</item>
+    </string-array>
+    <string-array name="electronics">
+        <item>Laptops</item>
+        <item>phones</item>
+        <item>Cameras</item>
+        <item>TVs</item>
+        <item>Audio/mp3</item>
     </string-array>
     <string-array name="properties">
         <item>Land</item>
