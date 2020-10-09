@@ -6,6 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".LocCatActivity">
 
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar_second"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-2dp" />
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout3"
         android:layout_width="0dp"
@@ -75,10 +81,8 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="56dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
         android:layout_marginBottom="8dp"
         android:background="#223348C1"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
@@ -138,9 +142,9 @@
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginBottom="16dp"
-        android:background="#3046C3"
+        android:background="@drawable/btn_submit"
         android:text="@string/con"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

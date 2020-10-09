@@ -6,13 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".SellActivity">
 
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar_second"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-2dp" />
+
     <TextView
         android:id="@+id/textView4"
         android:layout_width="265dp"
         android:layout_height="32dp"
         android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="50dp"
         android:text="@string/sell"
         android:textColor="#000102"
         android:textSize="24sp"
@@ -24,8 +29,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="10dp"
         android:text="@string/add_photos"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
@@ -34,7 +38,7 @@
         android:id="@+id/add_btn"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="16dp"
         android:background="#3046C3"
         android:text="@string/add"
         android:textColor="#FFFFFF"
@@ -48,10 +52,8 @@
         android:layout_width="0dp"
         android:layout_height="24dp"
         android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="12dp"
-        android:layout_marginRight="12dp"
         app:layout_constraintEnd_toStartOf="@+id/model_sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/add_btn" />
@@ -61,10 +63,8 @@
         android:layout_width="0dp"
         android:layout_height="24dp"
         android:layout_marginStart="12dp"
-        android:layout_marginLeft="12dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/brand_sp"
@@ -152,15 +152,11 @@
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
         android:ems="10"
         android:hint="@string/mileage"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/fuel_ty_sp"
         app:layout_constraintEnd_toStartOf="@+id/trans_sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
@@ -169,16 +165,14 @@
         android:id="@+id/engine_cap_et"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
         android:ems="10"
         android:hint="@string/engine_cap"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/fuel_ty_sp"
+        app:layout_constraintStart_toEndOf="@+id/fuel_ty_et"
         app:layout_constraintTop_toBottomOf="@+id/trans_sp" />
 
     <Spinner
@@ -186,10 +180,8 @@
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
         android:layout_marginBottom="8dp"
         android:dropDownWidth="match_parent"
         app:layout_constraintBottom_toTopOf="@+id/engine_cap_et"
@@ -197,48 +189,34 @@
         app:layout_constraintStart_toEndOf="@+id/mileage_et"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
-    <Spinner
-        android:id="@+id/fuel_ty_sp"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginRight="10dp"
-        android:spinnerMode="dropdown"
-        app:layout_constraintEnd_toStartOf="@+id/engine_cap_et"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mileage_et" />
-
     <EditText
         android:id="@+id/des_et"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
         android:ems="10"
         android:hint="@string/des"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fuel_ty_sp" />
+        app:layout_constraintTop_toBottomOf="@+id/engine_cap_et" />
 
     <Button
         android:id="@+id/post_ad_btn"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:background="#3046C3"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/btn_submit"
         android:text="@string/post_ad"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price_et" />
 
     <EditText
         android:id="@+id/price_et"
@@ -260,14 +238,27 @@
         android:id="@+id/checkBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="17dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
         android:text="@string/negotiatable"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/price_et"
         app:layout_constraintTop_toBottomOf="@+id/des_et" />
+
+    <EditText
+        android:id="@+id/fuel_ty_et"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="@string/fuel_ty"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/engine_cap_et"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mileage_et" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

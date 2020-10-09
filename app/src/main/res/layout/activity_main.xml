@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <include
+        android:id="@+id/include2"
         layout="@layout/toolbar_default"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="-2dp" />
@@ -83,7 +84,7 @@
         app:layout_constraintVertical_bias="0.105" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/signup_tb"
         android:layout_width="264dp"
         android:layout_height="32dp"
         android:text="Our Categories"
@@ -119,10 +120,10 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintHorizontal_bias="0.201"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6"
-        app:layout_constraintVertical_bias="0.092" />
+        app:layout_constraintTop_toBottomOf="@+id/elect_iv"
+        app:layout_constraintVertical_bias="0.081" />
 
     <TextView
         android:id="@+id/textView4"
@@ -139,8 +140,20 @@
         app:layout_constraintTop_toBottomOf="@+id/prop_iv"
         app:layout_constraintVertical_bias="0.111" />
 
+<!--    <ImageView-->
+<!--        android:id="@+id/elec_iv"-->
+<!--        android:layout_width="174dp"-->
+<!--        android:layout_height="110dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.067"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView3"-->
+<!--        app:layout_constraintVertical_bias="0.166"-->
+<!--        app:srcCompat="@drawable/phone" />-->
+
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/elect_iv"
         android:layout_width="174dp"
         android:layout_height="110dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -158,7 +171,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.535"
-        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintStart_toEndOf="@+id/elect_iv"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
         app:layout_constraintVertical_bias="0.171"
         app:srcCompat="@drawable/penguin" />
@@ -182,20 +195,33 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.069"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/signup_tb"
         app:layout_constraintVertical_bias="0.094"
         app:srcCompat="@drawable/home" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/vehi_vi"
         android:layout_width="177dp"
         android:layout_height="109dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.527"
         app:layout_constraintStart_toEndOf="@+id/prop_iv"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/signup_tb"
         app:layout_constraintVertical_bias="0.094"
         app:srcCompat="@drawable/car" />
+
+    <Button
+        android:id="@+id/myaccountbtn"
+        android:layout_width="79dp"
+        android:layout_height="30dp"
+        android:text="@string/myac"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include2"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

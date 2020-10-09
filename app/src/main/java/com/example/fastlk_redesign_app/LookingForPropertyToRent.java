@@ -1,7 +1,5 @@
 package com.example.fastlk_redesign_app;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -11,24 +9,28 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
+import androidx.appcompat.app.AppCompatActivity;
 
-public class LookingForSomethingToBuy extends AppCompatActivity {
-
+public class LookingForPropertyToRent extends AppCompatActivity {
     private Spinner catSp, subCatSp, locSp, subLocSp;
     ArrayAdapter<String> adapter;
     private Button conBtn;
+    TextView feedback;
+    ImageView home;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_looking_for_something_to_buy);
+    protected void onCreate(Bundle savedInstanceState){
 
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_looking_for_property_to_rent);
 
         catSp = findViewById(R.id.cat_sp);
         subCatSp = findViewById(R.id.sub_cat_sp);
         locSp = findViewById(R.id.loc_sp);
         subLocSp = findViewById(R.id.sub_loc_sp);
         conBtn = findViewById(R.id.ok_btn);
+        feedback = findViewById(R.id.textViewfeedback);
+        home = findViewById(R.id.home_iv);
 
         setSpinner(catSp, R.array.categoriesone);
 
@@ -47,7 +49,6 @@ public class LookingForSomethingToBuy extends AppCompatActivity {
 
             }
         });
-
         setSpinner(locSp, R.array.locations);
 
         locSp.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -67,46 +68,28 @@ public class LookingForSomethingToBuy extends AppCompatActivity {
             }
         });
 
-//        new CountDownTimer(10000, 1000){
-//
-//            @Override
-//            public void onTick(long l) {
-//
-//            }
-//
-//            @Override
-//            public void onFinish() {
-//                count = 1;
-//            }
-//        }.start();
-
         conBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), BuySomethingForm.class));
+                startActivity(new Intent(LookingForPropertyToRent.this, LookingForPropertyToRentForm.class));
             }
         });
 
-
-        TextView feedback = findViewById(R.id.textViewfeedback);
         feedback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LookingForSomethingToBuy.this, Feedback.class);
+                Intent intent = new Intent(LookingForPropertyToRent.this, Feedback.class);
                 startActivity(intent);
             }
         });
 
-        ImageView home = findViewById(R.id.home_iv);
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LookingForSomethingToBuy.this, MainActivity.class);
+                Intent intent = new Intent(LookingForPropertyToRent.this, MainActivity.class);
                 startActivity(intent);
             }
         });
-
-
     }
 
     public void setSpinner(Spinner spinner, int list){
@@ -114,6 +97,5 @@ public class LookingForSomethingToBuy extends AppCompatActivity {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
     }
-
-
 }
+
