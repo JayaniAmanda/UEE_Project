@@ -11,9 +11,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    private ImageView propIv;
-    private Button postAdBtn;
-    ImageView animals;
+private ImageView propIv, vehiIv;
+private Button postAdBtn, myAccBtn;
+
+    ImageView animals, vehicles;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
 
         propIv = findViewById(R.id.prop_iv);
         postAdBtn = findViewById(R.id.post_ad_btn);
+        vehiIv = findViewById(R.id.vehi_vi);
+        myAccBtn = findViewById(R.id.myaccountbtn);
 
         propIv.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,6 +37,21 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, SelectAdTypeActivity.class));
+            }
+        });
+
+        myAccBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, MyAccount.class));
+            }
+        });
+
+
+        vehiIv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, VehicleAdsView.class));
             }
         });
 
@@ -63,6 +81,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        TextView signIn = findViewById(R.id.textView1);
+        signIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SignInActivity.class);
+                startActivity(intent);
+            }
+        });
+
         ImageButton search = findViewById(R.id.imageButton4);
         search.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,5 +98,18 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        //ImageView electronics = findViewById(R.id.imageView6);
+
+        TextView electronics = findViewById(R.id.textView5);
+
+        electronics.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ElectronicAdsViewActivity.class));
+            }
+        });
+
+
     }
 }

@@ -6,6 +6,7 @@
     <string name="password">Password*</string>
     <string name="confirm_password">Confirm Password*</string>
     <string name="signup">Sign Up</string>
+    <string name="signin">Sign In</string>
     <string name="name_err">Enter a valid name</string>
     <string name="email_err">Enter a valid email</string>
     <string name="phone_err">Enter a valid contact number</string>
@@ -36,9 +37,22 @@
     <string name="pwd_req_err">Password is required</string>
     <string name="model_yr_error">Model year is invalid</string>
     <string name="mileage_err">Mileage is invalid</string>
+    <string name="landsize_error">Land Size Is Required</string>
+    <string name="name_error">Name Is Required</string>
+    <string name="email_error">Email Is Required</string>
+    <string name="location_error">Location Is Required</string>
+    <string name="sublocation_error">Location Is Required</string>
+    <string name="currentpw_error">Current Password Is Required</string>
+    <string name="newpw_error">New Password Is Required</string>
+    <string name="confirmnewpw_error">New Password Is Required</string>
+    <string name="title_error">Title Is Required</string>
+    <string name="description_error">Description Is Required</string>
+    <string name="price_error">Price Is Required</string>
     <string name="eng_cap_err">Engine capacity is invalid</string>
     <string name="price_err">Price is invalid</string>
     <string name="des_err">Description is required</string>
+    <string name="title_req_err">Title is required</string>
+    <string name="location_req_err">Location is required</string>
     <string name="cat_sel">Choose Category</string>
     <string name="sub_cat">Choose Subcategory</string>
     <string name="loc_sel">Choose Location</string>
@@ -50,6 +64,42 @@
     <string name="fuel_ty">Fuel Type</string>
     <string name="fuel_ty_sel">Select Fuel Type(s)</string>
     <string name="fuel_ty_err">Fuel type(s) is invalid</string>
+    <string name="forgot_pw">Forgot Password?</string>
+    <string name="sign_up_msg">Dont have an account yet?</string>
+    <string name="sign_up_now">Sign up now!</string>
+    <string name="look_for_property_to_rent_title">Look for property to rent:</string>
+    <string name="SellProperty">Offer A Property For Rent</string>
+    <string name="sub_cat_sel">Choose Sub Category</string>
+    <string name="sub_loc_sel">Choose Sub Location</string>
+    <string name="offerpfrtitle">Offer A Property For Rent</string>
+    <string name="addimage">Add Images (Limited To 5)</string>
+    <string name="landtype">Land Type</string>
+    <string name="browseimage">Browse Images</string>
+    <string name="agriculture">Agriculture</string>
+    <string name="commercial">Commercial</string>
+    <string name="residential">Residential</string>
+    <string name="other">Other</string>
+    <string name="landsize">Land Size</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="pricestring">Price</string>
+    <string name="postad">Post Ad</string>
+    <string name="myaccount">My Account</string>
+    <string name="myads">My Ads</string>
+    <string name="settings">Settings</string>
+    <string name="namej">Name</string>
+    <string name="emailj">Email</string>
+    <string name="location">Location</string>
+    <string name="sublocation">Sublocation</string>
+    <string name="updatepassword">Update Password</string>
+    <string name="currentpassword">Current Password</string>
+    <string name="newpassword">New Password</string>
+    <string name="confirmnewpw">Confirm New Password</string>
+    <string name="updatedetails">Update Details</string>
+    <string name="changepassword">Change Password</string>
+    <string name="emailuser">jrushantha@gmail.com</string>
+    <string name="username">Janith Perera</string>
+    <string name="myac">My Account</string>
     <string-array name="trans">
         <item>Manual</item>
         <item>Automatic</item>
@@ -105,6 +155,13 @@
         <item>Push Cycles</item>
         <item>Vans, Buses &amp; Lorries</item>
     </string-array>
+    <string-array name="electronics">
+        <item>Laptops</item>
+        <item>phones</item>
+        <item>Cameras</item>
+        <item>TVs</item>
+        <item>Audio/mp3</item>
+    </string-array>
     <string-array name="properties">
         <item>Land</item>
         <item>Houses</item>
@@ -139,15 +196,40 @@
         <item>Birds</item>
         <item>Rabbits</item>
     </string-array>
+    <string-array name="carlist">
+        <item>Cars</item>
+        <item>Motorbikes</item>
+        <item>Vans</item>
+        <item>Three wheelers</item>
+        <item>Buses</item>
+    </string-array>
     <string-array name="animals">
         <item>Related Details</item>
         <item>Food</item>
         <item>Veterinary</item>
         <item>Accessories</item>
     </string-array>
+    <string-array name="vehisub">
+        <item>All Vehicles</item>
+        <item>Auto Services</item>
+        <item>Auto Part and Accessories</item>
+    </string-array>
     <string-array name="categoriesone">
         <item>Vehicle</item>
         <item>Electronic</item>
         <item>Animals</item>
+    </string-array>
+    <string-array name="categoryopfr">
+        <item>Land</item>
+        <item>Houses</item>
+        <item>Apartments</item>
+        <item>Commercial Properties</item>
+        <item>Rooms and Annexes</item>
+        <item>Holiday and Short Term Rentals</item>
+    </string-array>
+    <string-array name="landtypes">
+        <item>Unit</item>
+        <item>Acres</item>
+        <item>Perches</item>
     </string-array>
 </resources>
