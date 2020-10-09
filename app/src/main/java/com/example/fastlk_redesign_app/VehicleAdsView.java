@@ -17,19 +17,19 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class AllAnimalsDetails extends AppCompatActivity {
+public class VehicleAdsView extends AppCompatActivity {
 
     private ListView adListView;
     private Button catBtn, locBtn;
     private Spinner dialogSp, dialog2Sp;
-    String[] petsArr, animalsArr, colomboArr, mataraArr;
+    String[] vehiclesArr, vehidetailArr, colomboArr, mataraArr;
     int dialogSpPos;
     ArrayAdapter<String> adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_all_animals_details);
+        setContentView(R.layout.activity_vehicle_ads_view);
 
 
         adListView = findViewById(R.id.ads_lv);
@@ -38,47 +38,41 @@ public class AllAnimalsDetails extends AppCompatActivity {
 
         ArrayList<Ad> ads = new ArrayList<>();
 
-        ads.add(new Ad(R.drawable.labby, "Puppy", "Dogs, Piliyandala", "Rs. 40,000"));
-        ads.add(new Ad(R.drawable.labby, "Puppy", "Dogs, Piliyandala", "Rs. 40,000"));
-        ads.add(new Ad(R.drawable.labby, "Puppy", "Dogs, Piliyandala", "Rs. 40,000"));
-        ads.add(new Ad(R.drawable.labby, "Puppy", "Dogs, Piliyandala", "Rs. 40,000"));
-        ads.add(new Ad(R.drawable.labby, "Puppy", "Dogs, Piliyandala", "Rs. 40,000"));
-        ads.add(new Ad(R.drawable.labby, "Puppy", "Dogs, Piliyandala", "Rs. 40,000"));
-        ads.add(new Ad(R.drawable.labby, "Puppy", "Dogs, Piliyandala", "Rs. 40,000"));
-        ads.add(new Ad(R.drawable.labby, "Puppy", "Dogs, Piliyandala", "Rs. 40,000"));
-        ads.add(new Ad(R.drawable.labby, "Puppy", "Dogs, Piliyandala", "Rs. 40,000"));
+        ads.add(new Ad(R.drawable.car, "lamborghini Gallardo", "Supercar, Kelaniya", "Rs. 100,000,000"));
+        ads.add(new Ad(R.drawable.car, "lamborghini Gallardo", "Supercar, Kelaniya", "Rs. 100,000,000"));
+        ads.add(new Ad(R.drawable.car, "lamborghini Gallardo", "Supercar, Kelaniya", "Rs. 100,000,000"));
+        ads.add(new Ad(R.drawable.car, "lamborghini Gallardo", "Supercar, Kelaniya", "Rs. 100,000,000"));
+        ads.add(new Ad(R.drawable.car, "lamborghini Gallardo", "Supercar, Kelaniya", "Rs. 100,000,000"));
+        ads.add(new Ad(R.drawable.car, "lamborghini Gallardo", "Supercar, Kelaniya", "Rs. 100,000,000"));
+        ads.add(new Ad(R.drawable.car, "lamborghini Gallardo", "Supercar, Kelaniya", "Rs. 100,000,000"));
+        ads.add(new Ad(R.drawable.car, "lamborghini Gallardo", "Supercar, Kelaniya", "Rs. 100,000,000"));
+        ads.add(new Ad(R.drawable.car, "lamborghini Gallardo", "Supercar, Kelaniya", "Rs. 100,000,000"));
+        ads.add(new Ad(R.drawable.car, "lamborghini Gallardo", "Supercar, Kelaniya", "Rs. 100,000,000"));
 
         AdAdapter adAdapter = new AdAdapter(this, R.layout.ad_row, ads);
         adListView.setAdapter(adAdapter);
 
-        petsArr = getResources().getStringArray(R.array.pets);
-        animalsArr = getResources().getStringArray(R.array.animals);
+        vehiclesArr = getResources().getStringArray(R.array.vehicles);
+        vehidetailArr = getResources().getStringArray(R.array.vehisub);
         colomboArr = getResources().getStringArray(R.array.colombo);
         mataraArr = getResources().getStringArray(R.array.matara);
 
-        catBtn.setText(petsArr[0]+ " / " + animalsArr[0]);
+        catBtn.setText(vehiclesArr[0]+ " / " + vehidetailArr[0]);
         locBtn.setText(colomboArr[0]);
 
         catBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(AllAnimalsDetails.this);
+                AlertDialog.Builder builder = new AlertDialog.Builder(VehicleAdsView.this);
                 builder.setTitle("Select Category");
                 View view = getLayoutInflater().inflate(R.layout.dialog_spinner, null);
                 dialogSp = view.findViewById(R.id.dialog_sp);
                 dialog2Sp = view.findViewById(R.id.dialog2_sp);
-                setSpinner(dialogSp, R.array.pets);
-                setSpinner(dialog2Sp, R.array.animals);
+                setSpinner(dialogSp, R.array.vehicles);
+                setSpinner(dialog2Sp, R.array.vehisub);
                 dialogSp.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                     @Override
                     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                        /*if (position == 0){
-                            setSpinner(dialog2Sp, R.array.pets);
-                            dialogSpPos = 0;
-                        } /*else if (position == 1){
-                            setSpinner(dialog2Sp, R.array.vehicles);
-                            dialogSpPos = 1;
-                        }*/
                     }
 
                     @Override
@@ -91,9 +85,7 @@ public class AllAnimalsDetails extends AppCompatActivity {
                     @Override
                     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
-                        catBtn.setText(petsArr[position] + " / " + animalsArr[position]);
-                        /*if (dialogSpPos == 0) catBtn.setText(petsArr[position]);
-                        else if (dialogSpPos == 1) catBtn.setText(vehicleArr[position]);*/
+                        catBtn.setText(vehiclesArr[position] + " / " + vehidetailArr[position]);
                     }
 
                     @Override
@@ -117,7 +109,7 @@ public class AllAnimalsDetails extends AppCompatActivity {
         locBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(AllAnimalsDetails.this);
+                AlertDialog.Builder builder = new AlertDialog.Builder(VehicleAdsView.this);
                 builder.setTitle("Select Location");
                 View view = getLayoutInflater().inflate(R.layout.dialog_spinner, null);
                 dialogSp = view.findViewById(R.id.dialog_sp);
@@ -171,7 +163,7 @@ public class AllAnimalsDetails extends AppCompatActivity {
         feedback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AllAnimalsDetails.this, Feedback.class);
+                Intent intent = new Intent(VehicleAdsView.this, Feedback.class);
                 startActivity(intent);
             }
         });
@@ -180,7 +172,7 @@ public class AllAnimalsDetails extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AllAnimalsDetails.this, MainActivity.class);
+                Intent intent = new Intent(VehicleAdsView.this, MainActivity.class);
                 startActivity(intent);
             }
         });

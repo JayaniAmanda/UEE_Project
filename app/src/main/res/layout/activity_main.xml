@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <include
+        android:id="@+id/include2"
         layout="@layout/toolbar_default"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="-2dp" />
@@ -187,7 +188,7 @@
         app:srcCompat="@drawable/home" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/vehi_vi"
         android:layout_width="177dp"
         android:layout_height="109dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -197,5 +198,18 @@
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="0.094"
         app:srcCompat="@drawable/car" />
+
+    <Button
+        android:id="@+id/myaccountbtn"
+        android:layout_width="79dp"
+        android:layout_height="30dp"
+        android:text="@string/myac"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include2"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SearchCategories"></activity>
+        <activity android:name=".Settings"></activity>
+        <activity android:name=".MyAds" />
+        <activity android:name=".MyAccount" />
+        <activity android:name=".VehicleAdsView" />
+        <activity android:name=".OfferAPropertyForRent" />
+        <activity android:name=".SellProperty" />
+        <activity android:name=".SearchCategories" />
         <activity android:name=".Feedback" />
         <activity android:name=".BuySomethingForm" />
         <activity android:name=".LookingForSomethingToBuy" />
