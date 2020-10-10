@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 private ImageView propIv, vehiIv, elecIv;
-private Button postAdBtn, myAccBtn;
+private Button postAdBtn/*, myAccBtn*/;
 
     ImageView animals, vehicles;
 
@@ -24,7 +24,7 @@ private Button postAdBtn, myAccBtn;
         propIv = findViewById(R.id.prop_iv);
         postAdBtn = findViewById(R.id.post_ad_btn);
         vehiIv = findViewById(R.id.vehi_vi);
-        myAccBtn = findViewById(R.id.myaccountbtn);
+        /*myAccBtn = findViewById(R.id.myaccountbtn);*/
         elecIv = findViewById(R.id.elect_iv);
 
 
@@ -42,12 +42,12 @@ private Button postAdBtn, myAccBtn;
             }
         });
 
-        myAccBtn.setOnClickListener(new View.OnClickListener() {
+        /*myAccBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, MyAccount.class));
             }
-        });
+        });*/
 
 
         vehiIv.setOnClickListener(new View.OnClickListener() {

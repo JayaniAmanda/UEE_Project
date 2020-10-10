@@ -15,7 +15,7 @@ public class LookingForPropertyToRentForm  extends AppCompatActivity{
 
       Button submitBtn;
       AwesomeValidation awesomeValidation;
-      ImageView home;
+      ImageView home, myAccBtn;
       TextView feedback;
 
         @Override
@@ -33,6 +33,14 @@ public class LookingForPropertyToRentForm  extends AppCompatActivity{
                 public void onClick(View v) {
                     Intent intent = new Intent(com.example.fastlk_redesign_app.LookingForPropertyToRentForm.this, Feedback.class);
                     startActivity(intent);
+                }
+            });
+
+            myAccBtn = findViewById(R.id.myaccountbtn);
+            myAccBtn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    startActivity(new Intent(LookingForPropertyToRentForm.this, MyAccount.class));
                 }
             });
 

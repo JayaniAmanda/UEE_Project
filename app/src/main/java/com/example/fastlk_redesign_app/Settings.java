@@ -22,6 +22,7 @@ public class Settings extends AppCompatActivity {
     AwesomeValidation awesomeValidation1, awesomeValidation2;
     ArrayAdapter<String> adapter;
     private Spinner locspin, subspin;
+    private ImageView myAccBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +49,14 @@ public class Settings extends AppCompatActivity {
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
 
+            }
+        });
+
+        myAccBtn = findViewById(R.id.myaccountbtn);
+        myAccBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Settings.this, MyAccount.class));
             }
         });
 
