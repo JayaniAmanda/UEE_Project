@@ -66,7 +66,7 @@
     <string name="fuel_ty_err">Fuel type(s) is invalid</string>
     <string name="forgot_pw">Forgot Password?</string>
     <string name="sign_up_msg">Dont have an account yet?</string>
-    <string name="sign_up_now">Sign up now!</string>
+    <string name="sign_up_now">Sign up!</string>
     <string name="look_for_property_to_rent_title">Look for property to rent:</string>
     <string name="SellProperty">Offer A Property For Rent</string>
     <string name="sub_cat_sel">Choose Sub Category</string>
@@ -156,8 +156,8 @@
         <item>Vans, Buses &amp; Lorries</item>
     </string-array>
     <string-array name="electronics">
-        <item>Laptops</item>
         <item>phones</item>
+        <item>Laptops</item>
         <item>Cameras</item>
         <item>TVs</item>
         <item>Audio/mp3</item>
@@ -184,8 +184,8 @@
         <item>Colombo 10</item>
     </string-array>
     <string-array name="matara">
-        <item>Godagama</item>
         <item>Weligama</item>
+        <item>Godagama</item>
         <item>Hakmana</item>
         <item>Akurassa</item>
         <item>Yatiyana</item>
