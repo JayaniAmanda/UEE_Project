@@ -35,6 +35,7 @@ public class SellActivity extends AppCompatActivity {
     boolean[] checkedItems;
     ArrayList<String> selectedItems = new ArrayList<>();
     AwesomeValidation awesomeValidation;
+    private ImageView myAccBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -140,6 +141,14 @@ public class SellActivity extends AppCompatActivity {
                     }
                 });
                 builder.create().show();
+            }
+        });
+
+        myAccBtn = findViewById(R.id.myaccountbtn);
+        myAccBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SellActivity.this, MyAccount.class));
             }
         });
 

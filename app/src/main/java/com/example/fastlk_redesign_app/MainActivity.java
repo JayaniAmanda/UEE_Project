@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 private ImageView propIv, vehiIv, elecIv;
-private Button postAdBtn, myAccBtn;
+private Button postAdBtn/*, myAccBtn*/;
 
     ImageView animals, vehicles;
 

@@ -11,6 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class BuySomethingForm extends AppCompatActivity {
+    private ImageView myAccBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,14 @@ public class BuySomethingForm extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(BuySomethingForm.this, "Successfully posted.", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        myAccBtn = findViewById(R.id.myaccountbtn);
+        myAccBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(BuySomethingForm.this, MyAccount.class));
             }
         });
 

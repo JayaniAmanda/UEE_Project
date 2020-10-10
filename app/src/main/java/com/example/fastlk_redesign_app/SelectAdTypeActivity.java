@@ -11,10 +11,20 @@ import android.widget.TextView;
 
 public class SelectAdTypeActivity extends AppCompatActivity {
 
+    private ImageView myAccBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_ad_type);
+
+        myAccBtn = findViewById(R.id.myaccountbtn);
+        myAccBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SelectAdTypeActivity.this, MyAccount.class));
+            }
+        });
 
         TextView feedback = findViewById(R.id.textViewfeedback);
         feedback.setOnClickListener(new View.OnClickListener() {

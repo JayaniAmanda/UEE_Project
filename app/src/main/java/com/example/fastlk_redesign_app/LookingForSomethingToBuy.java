@@ -17,6 +17,7 @@ public class LookingForSomethingToBuy extends AppCompatActivity {
     private Spinner catSp, subCatSp, locSp, subLocSp;
     ArrayAdapter<String> adapter;
     private Button conBtn;
+    private ImageView myAccBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +46,14 @@ public class LookingForSomethingToBuy extends AppCompatActivity {
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
 
+            }
+        });
+
+        myAccBtn = findViewById(R.id.myaccountbtn);
+        myAccBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LookingForSomethingToBuy.this, MyAccount.class));
             }
         });
 

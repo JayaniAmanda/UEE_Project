@@ -17,6 +17,7 @@ public class OfferAPropertyForRent extends AppCompatActivity {
     private Spinner catSpin, locSpin, subLocSpin;
     ArrayAdapter<String> adapter;
     private Button continueBtn;
+    private ImageView myAccBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,6 +71,14 @@ public class OfferAPropertyForRent extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(OfferAPropertyForRent.this, MainActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        myAccBtn = findViewById(R.id.myaccountbtn);
+        myAccBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(OfferAPropertyForRent.this, MyAccount.class));
             }
         });
     }
