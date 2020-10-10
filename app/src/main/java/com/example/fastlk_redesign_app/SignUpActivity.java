@@ -47,7 +47,7 @@ public class SignUpActivity extends AppCompatActivity {
             }
         });
 
-        awesomeValidation = new AwesomeValidation(ValidationStyle.COLORATION);
+        awesomeValidation = new AwesomeValidation(ValidationStyle.BASIC);
 
         String regexName = "[a-zA-Z\\s]+";
         String regexPhone = "[0]{1}[0-9]{9}$";
@@ -69,6 +69,7 @@ public class SignUpActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (awesomeValidation.validate()){
                     Toast.makeText(SignUpActivity.this, "Sign up Successful!", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(SignUpActivity.this, SelectAdTypeActivity.class));
                 }
             }
         });

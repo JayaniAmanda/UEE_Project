@@ -28,9 +28,9 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="70dp"
-        android:layout_height="63dp"
-        android:background="@color/colorPrimaryDark"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="#3046C3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.472"

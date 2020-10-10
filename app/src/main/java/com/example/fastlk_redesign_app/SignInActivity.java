@@ -60,6 +60,7 @@ public class SignInActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (awesomeValidation.validate()) {
                     Toast.makeText(SignInActivity.this, "Login Successful!", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(SignInActivity.this, SelectAdTypeActivity.class));
                 }
             }
         });

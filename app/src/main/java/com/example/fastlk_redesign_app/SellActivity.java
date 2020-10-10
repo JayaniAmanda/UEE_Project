@@ -80,7 +80,7 @@ public class SellActivity extends AppCompatActivity {
 
         awesomeValidation.addValidation(this, R.id.model_yr_et, Range.closed(1900, Calendar.getInstance().get(Calendar.YEAR)), R.string.model_yr_error);
         awesomeValidation.addValidation(this, R.id.mileage_et, RegexTemplate.NOT_EMPTY, R.string.mileage_err);
-        awesomeValidation.addValidation(this, R.id.fuel_ty_et, RegexTemplate.NOT_EMPTY, R.string.fuel_ty_err);
+//        awesomeValidation.addValidation(this, R.id.fuel_ty_et, RegexTemplate.NOT_EMPTY, R.string.fuel_ty_err);
         awesomeValidation.addValidation(this, R.id.engine_cap_et, RegexTemplate.NOT_EMPTY, R.string.eng_cap_err);
         awesomeValidation.addValidation(this, R.id.des_et, RegexTemplate.NOT_EMPTY, R.string.des_err);
         awesomeValidation.addValidation(this, R.id.price_et, RegexTemplate.NOT_EMPTY, R.string.price_err);
@@ -148,6 +148,7 @@ public class SellActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (awesomeValidation.validate()){
                     Toast.makeText(SellActivity.this, "Ad Posted!", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(SellActivity.this, MainActivity.class));
                 }
             }
         });

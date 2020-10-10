@@ -58,7 +58,6 @@ public class LookingForSomethingToBuy extends AppCompatActivity {
                 } else if (position == 1){
                     setSpinner(subLocSp, R.array.matara);
                 }
-                //count = 1;
             }
 
             @Override
@@ -66,19 +65,6 @@ public class LookingForSomethingToBuy extends AppCompatActivity {
 
             }
         });
-
-//        new CountDownTimer(10000, 1000){
-//
-//            @Override
-//            public void onTick(long l) {
-//
-//            }
-//
-//            @Override
-//            public void onFinish() {
-//                count = 1;
-//            }
-//        }.start();
 
         conBtn.setOnClickListener(new View.OnClickListener() {
             @Override

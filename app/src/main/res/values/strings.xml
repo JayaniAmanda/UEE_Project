@@ -21,14 +21,14 @@
     <string name="add">+</string>
     <string name="condition">Condition</string>
     <string name="trim">Trim (optional)</string>
-    <string name="model_yr">Model Year</string>
+    <string name="model_yr">Model Year*</string>
     <string name="used">Used</string>
     <string name="new_">New</string>
     <string name="reconditioned">Reconditioned</string>
     <string name="post_ad">Post Ad</string>
-    <string name="mileage">Mileage (km)</string>
-    <string name="engine_cap">Engine Capacity</string>
-    <string name="des">Description</string>
+    <string name="mileage">Mileage (km)*</string>
+    <string name="engine_cap">Engine Capacity*</string>
+    <string name="des">Description*</string>
     <string name="negotiatable">Negotiatable</string>
     <string name="price">Price*</string>
     <string name="name_req_err">Name is required</string>
@@ -163,8 +163,8 @@
         <item>Audio/mp3</item>
     </string-array>
     <string-array name="properties">
-        <item>Land</item>
         <item>Houses</item>
+        <item>Land</item>
         <item>Apartments</item>
     </string-array>
     <string-array name="locations">

@@ -22,6 +22,7 @@ public class Feedback extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(Feedback.this, "Successfully submitted.", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(Feedback.this, MainActivity.class));
             }
         });
 

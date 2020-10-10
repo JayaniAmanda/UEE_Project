@@ -24,7 +24,7 @@ private Button postAdBtn, myAccBtn;
         propIv = findViewById(R.id.prop_iv);
         postAdBtn = findViewById(R.id.post_ad_btn);
         vehiIv = findViewById(R.id.vehi_vi);
-        myAccBtn = findViewById(R.id.myaccountbtn);
+        //myAccBtn = findViewById(R.id.myaccountbtn);
         elecIv = findViewById(R.id.elect_iv);
 
 
@@ -39,15 +39,17 @@ private Button postAdBtn, myAccBtn;
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, SelectAdTypeActivity.class));
+                //startActivity(new Intent(MainActivity.this, SignUpActivity.class));
+                //startActivity(new Intent(MainActivity.this, SignInActivity.class));
             }
         });
 
-        myAccBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, MyAccount.class));
-            }
-        });
+//        myAccBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                startActivity(new Intent(MainActivity.this, MyAccount.class));
+//            }
+//        });
 
 
         vehiIv.setOnClickListener(new View.OnClickListener() {
@@ -107,7 +109,6 @@ private Button postAdBtn, myAccBtn;
         elecIv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                System.out.println("hi");
                 startActivity(new Intent(MainActivity.this, ElectronicAdsViewActivity.class));
             }
         });
