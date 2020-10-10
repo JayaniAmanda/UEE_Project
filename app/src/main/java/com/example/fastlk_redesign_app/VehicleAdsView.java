@@ -38,16 +38,16 @@ public class VehicleAdsView extends AppCompatActivity {
 
         ArrayList<Ad> ads = new ArrayList<>();
 
-        ads.add(new Ad(R.drawable.car, "lamborghini Gallardo", "Supercar, Kelaniya", "Rs. 100,000,000"));
-        ads.add(new Ad(R.drawable.car, "lamborghini Gallardo", "Supercar, Kelaniya", "Rs. 100,000,000"));
-        ads.add(new Ad(R.drawable.car, "lamborghini Gallardo", "Supercar, Kelaniya", "Rs. 100,000,000"));
-        ads.add(new Ad(R.drawable.car, "lamborghini Gallardo", "Supercar, Kelaniya", "Rs. 100,000,000"));
-        ads.add(new Ad(R.drawable.car, "lamborghini Gallardo", "Supercar, Kelaniya", "Rs. 100,000,000"));
-        ads.add(new Ad(R.drawable.car, "lamborghini Gallardo", "Supercar, Kelaniya", "Rs. 100,000,000"));
-        ads.add(new Ad(R.drawable.car, "lamborghini Gallardo", "Supercar, Kelaniya", "Rs. 100,000,000"));
-        ads.add(new Ad(R.drawable.car, "lamborghini Gallardo", "Supercar, Kelaniya", "Rs. 100,000,000"));
-        ads.add(new Ad(R.drawable.car, "lamborghini Gallardo", "Supercar, Kelaniya", "Rs. 100,000,000"));
-        ads.add(new Ad(R.drawable.car, "lamborghini Gallardo", "Supercar, Kelaniya", "Rs. 100,000,000"));
+        ads.add(new Ad(R.drawable.supra, "Toyota Supra", "Vehicles, Kelaniya", "Rs. 100,000,000"));
+        ads.add(new Ad(R.drawable.supra, "Toyota Supra", "Vehicles, Kelaniya", "Rs. 100,000,000"));
+        ads.add(new Ad(R.drawable.supra, "Toyota Supra", "Vehicles, Kelaniya", "Rs. 100,000,000"));
+        ads.add(new Ad(R.drawable.supra, "Toyota Supra", "Vehicles, Kelaniya", "Rs. 100,000,000"));
+        ads.add(new Ad(R.drawable.supra, "Toyota Supra", "Vehicles, Kelaniya", "Rs. 100,000,000"));
+        ads.add(new Ad(R.drawable.supra, "Toyota Supra", "Vehicles, Kelaniya", "Rs. 100,000,000"));
+        ads.add(new Ad(R.drawable.supra, "Toyota Supra", "Vehicles, Kelaniya", "Rs. 100,000,000"));
+        ads.add(new Ad(R.drawable.supra, "Toyota Supra", "Vehicles, Kelaniya", "Rs. 100,000,000"));
+        ads.add(new Ad(R.drawable.supra, "Toyota Supra", "Vehicles, Kelaniya", "Rs. 100,000,000"));
+        ads.add(new Ad(R.drawable.supra, "Toyota Supra", "Vehicles, Kelaniya", "Rs. 100,000,000"));
 
         AdAdapter adAdapter = new AdAdapter(this, R.layout.ad_row, ads);
         adListView.setAdapter(adAdapter);
