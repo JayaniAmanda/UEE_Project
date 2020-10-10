@@ -41,6 +41,8 @@ public class LookingForPropertyToRent extends AppCompatActivity {
                     setSpinner(subCatSp, R.array.vehicles);
                 } else if (position == 2){
                     setSpinner(subCatSp, R.array.pets);
+                }else if (position == 1){
+                    setSpinner(subCatSp, R.array.electronics);
                 }
             }
 

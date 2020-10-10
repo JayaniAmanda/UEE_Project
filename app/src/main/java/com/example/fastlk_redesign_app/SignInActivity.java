@@ -16,7 +16,7 @@ public class SignInActivity extends AppCompatActivity {
     private Button signInBtn;
     private TextView forgotPw;
     AwesomeValidation awesomeValidation;
-    TextView signUp;
+    TextView signUp,signUpNav;
     ImageView home;
     TextView feedback;
 
@@ -30,6 +30,7 @@ public class SignInActivity extends AppCompatActivity {
         signUp = findViewById(R.id.textView16);
         feedback = findViewById(R.id.textViewfeedback);
         home = findViewById(R.id.home_iv);
+        signUpNav = findViewById(R.id.signup_tb);
 
         awesomeValidation = new AwesomeValidation(ValidationStyle.COLORATION);
 
@@ -70,6 +71,12 @@ public class SignInActivity extends AppCompatActivity {
         });
 
         signUp.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                startActivity(new Intent(SignInActivity.this, SignUpActivity.class));
+            }
+        });
+
+        signUpNav.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
                 startActivity(new Intent(SignInActivity.this, SignUpActivity.class));
             }

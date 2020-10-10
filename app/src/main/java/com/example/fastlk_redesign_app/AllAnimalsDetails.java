@@ -25,6 +25,8 @@ public class AllAnimalsDetails extends AppCompatActivity {
     String[] petsArr, animalsArr, colomboArr, mataraArr;
     int dialogSpPos;
     ArrayAdapter<String> adapter;
+    String a;
+    String b;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,6 +74,8 @@ public class AllAnimalsDetails extends AppCompatActivity {
                 dialogSp.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                     @Override
                     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                        a = petsArr[position];
+
                         /*if (position == 0){
                             setSpinner(dialog2Sp, R.array.pets);
                             dialogSpPos = 0;
@@ -91,7 +95,23 @@ public class AllAnimalsDetails extends AppCompatActivity {
                     @Override
                     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
-                        catBtn.setText(petsArr[position] + " / " + animalsArr[position]);
+                        b = animalsArr[position];
+
+
+
+
+                        /*if(animalsArr[position] == "Related Details"){
+                            catBtn.setText(petsArr[position] + " / " + "Related Details");
+                        }
+                        else if(animalsArr[position] == "Food"){
+                            catBtn.setText(petsArr[position] + " / " + "Food");
+                        }
+                        else if(animalsArr[position] == "Veterinary"){
+                            catBtn.setText(petsArr[position] + " / " + "Veterinary");
+                        }
+                        else{
+                            catBtn.setText(petsArr[position] + " / " + "Accessories");
+                        }
                         /*if (dialogSpPos == 0) catBtn.setText(petsArr[position]);
                         else if (dialogSpPos == 1) catBtn.setText(vehicleArr[position]);*/
                     }
@@ -105,9 +125,12 @@ public class AllAnimalsDetails extends AppCompatActivity {
                 builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
+                        catBtn.setText(a+ " / " + b);
 
                     }
                 });
+
+
 
                 builder.setView(view);
                 builder.create().show();
@@ -161,6 +184,8 @@ public class AllAnimalsDetails extends AppCompatActivity {
 
                     }
                 });
+
+
                 builder.setView(view);
                 builder.create().show();
             }

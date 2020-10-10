@@ -19,10 +19,10 @@ public class ElectronicAdsViewActivity extends AppCompatActivity {
     private ListView adListView;
     private Button catBtn, locBtn;
     private Spinner dialogSp, dialog2Sp;
-    String[] vehicleArr, propArr, colomboArr, mataraArr,electronicArr;
+    String[] vehicleArr, propArr, colomboArr, mataraArr,electronicArr,locArr;
     int dialogSpPos;
     ImageView home;
-    TextView feedback,signIn;
+    TextView feedback,signIn,signUp;
 
     ArrayAdapter<String> adapter;
         @Override
@@ -42,6 +42,8 @@ public class ElectronicAdsViewActivity extends AppCompatActivity {
             feedback = findViewById(R.id.textViewfeedback);
             home = findViewById(R.id.home_iv);
             signIn = findViewById(R.id.textView1);
+            signUp = findViewById(R.id.signup_tb);
+            locArr = getResources().getStringArray(R.array.locations);
 
             feedback.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -67,6 +69,12 @@ public class ElectronicAdsViewActivity extends AppCompatActivity {
                 }
             });
 
+            signUp.setOnClickListener(new View.OnClickListener(){
+                public void onClick(View v) {
+                    startActivity(new Intent(ElectronicAdsViewActivity.this, SignUpActivity.class));
+                }
+            });
+
             ArrayList<Ad> ads = new ArrayList<>();
 
             ads.add(new Ad(R.drawable.iphone, "Apple iPhone 11", "phones, Weligama", "Rs. 150,000"));
@@ -82,31 +90,23 @@ public class ElectronicAdsViewActivity extends AppCompatActivity {
             AdAdapter adAdapter = new AdAdapter(this, R.layout.ad_row, ads);
             adListView.setAdapter(adAdapter);
 
-            catBtn.setText(electronicArr[1]);
-            locBtn.setText(mataraArr[1]);
+            catBtn.setText(electronicArr[0]);
+            locBtn.setText(mataraArr[0]);
 
             catBtn.setOnClickListener(new View.OnClickListener() {
+
                 @Override
                 public void onClick(View v) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(ElectronicAdsViewActivity.this);
-                    builder.setTitle("Select Category");
-                    View view = getLayoutInflater().inflate(R.layout.dialog_spinner, null);
+                    builder.setTitle(R.string.sub_cat);
+                    View view = getLayoutInflater().inflate(R.layout.spinner, null);
                     dialogSp = view.findViewById(R.id.dialog_sp);
-                    dialog2Sp = view.findViewById(R.id.dialog2_sp);
-                    setSpinner(dialogSp, R.array.categories);
+                    setSpinner(dialogSp, electronicArr);
+
                     dialogSp.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                         @Override
                         public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                            if (position == 0){
-                                setSpinner(dialog2Sp, R.array.properties);
-                                dialogSpPos = 0;
-                            } else if (position == 1){
-                                setSpinner(dialog2Sp, R.array.vehicles);
-                                dialogSpPos = 1;
-                            } else if (position == 2) {
-                                setSpinner(dialog2Sp, R.array.electronics);
-                                dialogSpPos = 2;
-                            }
+                            catBtn.setText(electronicArr[position]);
                         }
 
                         @Override
@@ -115,50 +115,35 @@ public class ElectronicAdsViewActivity extends AppCompatActivity {
                         }
                     });
 
-                    dialog2Sp.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                        @Override
-                        public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                            if (dialogSpPos == 0) catBtn.setText(propArr[position]);
-                            else if (dialogSpPos == 1) catBtn.setText(vehicleArr[position]);
-                            else if (dialogSpPos == 2) catBtn.setText(electronicArr[position]);
-                        }
-
-                        @Override
-                        public void onNothingSelected(AdapterView<?> parent) {
-
-                        }
-                    });
-
-                    builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
 
                         }
                     });
-
-                    builder.setView(view);
-                    builder.create().show();
+                    builder.setView(view).create().show();
                 }
+
             });
 
             locBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(ElectronicAdsViewActivity.this);
-                    builder.setTitle("Select Location");
+                    builder.setTitle("Choose Location");
                     View view = getLayoutInflater().inflate(R.layout.dialog_spinner, null);
                     dialogSp = view.findViewById(R.id.dialog_sp);
                     dialog2Sp = view.findViewById(R.id.dialog2_sp);
-                    setSpinner(dialogSp, R.array.locations);
-
+                    setSpinner(dialogSp, locArr);
+                    dialogSp.setSelection(1);
                     dialogSp.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                         @Override
                         public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                             if (position == 0){
-                                setSpinner(dialog2Sp, R.array.colombo);
+                                setSpinner(dialog2Sp, colomboArr);
                                 dialogSpPos = 0;
                             } else if (position == 1){
-                                setSpinner(dialog2Sp, R.array.matara);
+                                setSpinner(dialog2Sp, mataraArr);
                                 dialogSpPos = 1;
                             }
                         }
@@ -194,8 +179,8 @@ public class ElectronicAdsViewActivity extends AppCompatActivity {
             });
         }
 
-    public void setSpinner(Spinner spinner, int list){
-        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, getResources().getStringArray(list));
+    public void setSpinner(Spinner spinner, String[] array){
+        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, array);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
     }
