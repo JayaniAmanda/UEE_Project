@@ -22,10 +22,26 @@
         tools:ignore="VectorDrawableCompat" />
 
     <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="100dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="5dp"
+        android:text="Sign In"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.244"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintVertical_bias="0.083" />
+
+    <TextView
         android:id="@+id/textViewfeedback"
         android:layout_width="150dp"
         android:layout_height="30dp"
-        android:layout_marginLeft="190dp"
         android:paddingLeft="70dp"
         android:paddingTop="5dp"
         android:text="Feedback"
