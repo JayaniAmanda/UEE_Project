@@ -16,6 +16,7 @@ public class LocCatActivity extends AppCompatActivity {
     private Spinner catSp, subCatSp, locSp, subLocSp;
     ArrayAdapter<String> adapter;
     private Button conBtn;
+    private ImageView myAccBtn;
     //int count;
     String[] propArr, vehicleArr, catArr, locArr, colomboArr, mataraArr;
 
@@ -43,6 +44,14 @@ public class LocCatActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(LocCatActivity.this, MainActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        myAccBtn = findViewById(R.id.myaccountbtn);
+        myAccBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LocCatActivity.this, MyAccount.class));
             }
         });
 

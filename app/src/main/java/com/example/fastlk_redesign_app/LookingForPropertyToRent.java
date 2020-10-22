@@ -16,7 +16,7 @@ public class LookingForPropertyToRent extends AppCompatActivity {
     ArrayAdapter<String> adapter;
     private Button conBtn;
     TextView feedback;
-    ImageView home;
+    ImageView home, myAccBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -51,6 +51,15 @@ public class LookingForPropertyToRent extends AppCompatActivity {
 
             }
         });
+
+        myAccBtn = findViewById(R.id.myaccountbtn);
+        myAccBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LookingForPropertyToRent.this, MyAccount.class));
+            }
+        });
+
         setSpinner(locSp, R.array.locations);
 
         locSp.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {

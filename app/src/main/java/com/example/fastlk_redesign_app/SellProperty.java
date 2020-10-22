@@ -21,6 +21,7 @@ public class SellProperty extends AppCompatActivity {
     private ArrayAdapter<String> adapter;
     private Button postAdbtn;
     AwesomeValidation awesomeValidation;
+    private ImageView myAccBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +39,14 @@ public class SellProperty extends AppCompatActivity {
         awesomeValidation.addValidation(this, R.id.pricetxt, RegexTemplate.NOT_EMPTY, R.string.price_error);
 
         setSpinner(perches, R.array.landtypes);
+
+        myAccBtn = findViewById(R.id.myaccountbtn);
+        myAccBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SellProperty.this, MyAccount.class));
+            }
+        });
 
 
         TextView feedback = findViewById(R.id.textViewfeedback);
