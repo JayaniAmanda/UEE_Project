@@ -52,6 +52,14 @@ public class VehicleAdsView extends AppCompatActivity {
         AdAdapter adAdapter = new AdAdapter(this, R.layout.ad_row, ads);
         adListView.setAdapter(adAdapter);
 
+        adListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(VehicleAdsView.this, VehicleDetailsActivity.class);
+                startActivity(intent);
+            }
+        });
+
         vehiclesArr = getResources().getStringArray(R.array.vehicles);
         vehidetailArr = getResources().getStringArray(R.array.vehisub);
         colomboArr = getResources().getStringArray(R.array.colombo);

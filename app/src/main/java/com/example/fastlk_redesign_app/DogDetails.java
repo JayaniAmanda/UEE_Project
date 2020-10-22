@@ -32,7 +32,7 @@ public class DogDetails extends AppCompatActivity {
         slideModels.add(new SlideModel(R.drawable.labby2,"image 3"));
         slideModels.add(new SlideModel(R.drawable.labby3,"image 4"));
 
-        imageSlider.setImageList(slideModels, true);
+        imageSlider.setImageList(slideModels, false);
 
 
         TextView feedback = findViewById(R.id.textViewfeedback);

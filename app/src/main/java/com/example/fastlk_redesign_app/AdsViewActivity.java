@@ -67,16 +67,24 @@ public class AdsViewActivity extends AppCompatActivity {
         });
 
         ArrayList<Ad> ads = new ArrayList<>();
-        ads.add(new Ad(R.drawable.house, "House for sale", "Houses, Piliyandala", "Rs. 100,000"));
-        ads.add(new Ad(R.drawable.house, "House for sale", "Houses, Piliyandala", "Rs. 100,000"));
-        ads.add(new Ad(R.drawable.house, "House for sale", "Houses, Piliyandala", "Rs. 100,000"));
-        ads.add(new Ad(R.drawable.house, "House for sale", "Houses, Piliyandala", "Rs. 100,000"));
-        ads.add(new Ad(R.drawable.house, "House for sale", "Houses, Piliyandala", "Rs. 100,000"));
-        ads.add(new Ad(R.drawable.house, "House for sale", "Houses, Piliyandala", "Rs. 100,000"));
-        ads.add(new Ad(R.drawable.house, "House for sale", "Houses, Piliyandala", "Rs. 100,000"));
+        ads.add(new Ad(R.drawable.house, "House", "Houses, Piliyandala", "Rs. 100,000"));
+        ads.add(new Ad(R.drawable.house, "House", "Houses, Piliyandala", "Rs. 100,000"));
+        ads.add(new Ad(R.drawable.house, "House", "Houses, Piliyandala", "Rs. 100,000"));
+        ads.add(new Ad(R.drawable.house, "House", "Houses, Piliyandala", "Rs. 100,000"));
+        ads.add(new Ad(R.drawable.house, "House", "Houses, Piliyandala", "Rs. 100,000"));
+        ads.add(new Ad(R.drawable.house, "House", "Houses, Piliyandala", "Rs. 100,000"));
+        ads.add(new Ad(R.drawable.house, "House", "Houses, Piliyandala", "Rs. 100,000"));
 
         AdAdapter adAdapter = new AdAdapter(this, R.layout.ad_row, ads);
         adListView.setAdapter(adAdapter);
+
+        adListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(AdsViewActivity.this, PropertyDetailsActivity.class);
+                startActivity(intent);
+            }
+        });
 
         catBtn.setText(propArr[0]);
         locBtn.setText(colomboArr[0]);

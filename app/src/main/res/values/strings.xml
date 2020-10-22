@@ -100,6 +100,8 @@
     <string name="emailuser">jrushantha@gmail.com</string>
     <string name="username">Janith Perera</string>
     <string name="myac">My Account</string>
+    <string name="house_sale">House for sale</string>
+    <string name="pl_con">Please Contact Us</string>
     <string-array name="trans">
         <item>Manual</item>
         <item>Automatic</item>

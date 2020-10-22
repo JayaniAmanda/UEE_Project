@@ -90,6 +90,14 @@ public class ElectronicAdsViewActivity extends AppCompatActivity {
             AdAdapter adAdapter = new AdAdapter(this, R.layout.ad_row, ads);
             adListView.setAdapter(adAdapter);
 
+            adListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    Intent intent = new Intent(ElectronicAdsViewActivity.this, ElectronicDetailsActivity.class);
+                    startActivity(intent);
+                }
+            });
+
             catBtn.setText(electronicArr[0]);
             locBtn.setText(mataraArr[0]);
 
