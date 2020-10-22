@@ -53,6 +53,14 @@ public class AllAnimalsDetails extends AppCompatActivity {
         AdAdapter adAdapter = new AdAdapter(this, R.layout.ad_row, ads);
         adListView.setAdapter(adAdapter);
 
+        adListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(AllAnimalsDetails.this, DogDetails.class);
+                startActivity(intent);
+            }
+        });
+
         petsArr = getResources().getStringArray(R.array.pets);
         animalsArr = getResources().getStringArray(R.array.animals);
         colomboArr = getResources().getStringArray(R.array.colombo);
