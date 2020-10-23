@@ -30,32 +30,32 @@
 
     <TextView
         android:id="@+id/prop_price_tv"
-        android:layout_width="133dp"
-        android:layout_height="34dp"
+        android:layout_width="233dp"
+        android:layout_height="38dp"
         android:layout_marginBottom="116dp"
-        android:text="Rs. 100,000"
+        android:text="Rs. 100,000,000"
         android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintHorizontal_bias="0.146"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/house_sale_tv"
-        app:layout_constraintVertical_bias="0.082" />
+        app:layout_constraintVertical_bias="0.107" />
 
     <TextView
         android:id="@+id/house_tv"
         android:layout_width="wrap_content"
         android:layout_height="36dp"
-        android:text="House"
+        android:text="Vehicle"
         android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintHorizontal_bias="0.077"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/vehicle_slider"
-        app:layout_constraintVertical_bias="0.087" />
+        app:layout_constraintVertical_bias="0.086" />
 
     <TextView
         android:id="@+id/textView20"
@@ -89,6 +89,7 @@
         android:id="@+id/house_sale_tv"
         android:layout_width="265dp"
         android:layout_height="40dp"
+        android:text="Vehicle for sale at Kelaniya"
         android:textColor="#033205"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -96,7 +97,6 @@
         app:layout_constraintHorizontal_bias="0.178"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/house_tv"
-        app:layout_constraintVertical_bias="0.05"
-        android:text="House for sale at Piliyandala"/>
+        app:layout_constraintVertical_bias="0.05" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -20,10 +20,10 @@ public class VehicleDetailsActivity extends AppCompatActivity {
         ImageSlider imageSlider = findViewById(R.id.vehicle_slider);
 
         List<SlideModel> slideModels = new ArrayList<>();
-        slideModels.add(new SlideModel(R.drawable.labby,"image 1"));
-        slideModels.add(new SlideModel(R.drawable.labby1,"image 2"));
-        slideModels.add(new SlideModel(R.drawable.labby2,"image 3"));
-        slideModels.add(new SlideModel(R.drawable.labby3,"image 4"));
+        slideModels.add(new SlideModel(R.drawable.supra1,"image 1"));
+        slideModels.add(new SlideModel(R.drawable.supra2,"image 2"));
+        slideModels.add(new SlideModel(R.drawable.supra3,"image 3"));
+        slideModels.add(new SlideModel(R.drawable.supra4,"image 4"));
 
         imageSlider.setImageList(slideModels, false);
 
