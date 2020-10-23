@@ -9,18 +9,15 @@
     <Button
         android:id="@+id/signin_btn"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="50dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="65dp"
         android:background="@drawable/btn_submit"
         android:text="@string/signin"
         android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pw_et"
-        app:layout_constraintVertical_bias="0.25" />
+        app:layout_constraintTop_toBottomOf="@+id/pw_et" />
 
     <!--
     <Button
@@ -82,40 +79,37 @@
     <TextView
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="204dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="180dp"
         android:text="@string/forgot_pw"
         android:textColor="#3F51B5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.524"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signin_btn"
-        app:layout_constraintVertical_bias="0.784" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView14"
         android:layout_width="180dp"
-        android:layout_height="27dp"
+        android:layout_height="0dp"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginBottom="150dp"
         android:text="@string/sign_up_msg"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/textView16"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView16"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
         android:layout_marginEnd="32dp"
+        android:layout_marginBottom="150dp"
         android:text="@string/sign_up_now"
         android:textColor="#3F51B5"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView14"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+        app:layout_constraintStart_toEndOf="@+id/textView14" />
 
     <include
         android:id="@+id/include"

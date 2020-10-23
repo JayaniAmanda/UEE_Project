@@ -23,7 +23,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/offer_property_btn"
-        app:layout_constraintVertical_bias="0.101" />
+        app:layout_constraintVertical_bias="0.120000005" />
 
     <Button
         android:id="@+id/offer_property_btn"
@@ -36,7 +36,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.193" />
+        app:layout_constraintVertical_bias="0.26" />
 
     <Button
         android:id="@+id/looking_property_btn"
@@ -49,7 +49,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.153" />
+        app:layout_constraintVertical_bias="0.17000002" />
 
     <Button
         android:id="@+id/looking_something_btn"
@@ -62,5 +62,5 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/looking_property_btn"
-        app:layout_constraintVertical_bias="0.221" />
+        app:layout_constraintVertical_bias="0.25" />
 </androidx.constraintlayout.widget.ConstraintLayout>

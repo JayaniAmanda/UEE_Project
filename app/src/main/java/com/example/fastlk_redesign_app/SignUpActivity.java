@@ -29,6 +29,15 @@ public class SignUpActivity extends AppCompatActivity {
 
         signUpBtn = findViewById(R.id.signup_tb);
 
+        TextView signIn = findViewById(R.id.textView1);
+        signIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SignUpActivity.this, SignInActivity.class);
+                startActivity(intent);
+            }
+        });
+
         TextView feedback = findViewById(R.id.textViewfeedback);
         feedback.setOnClickListener(new View.OnClickListener() {
             @Override
