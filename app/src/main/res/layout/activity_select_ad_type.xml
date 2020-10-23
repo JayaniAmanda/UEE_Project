@@ -43,7 +43,7 @@
         android:layout_width="250dp"
         android:layout_height="55dp"
         android:background="@drawable/btn_submit"
-        android:text="Look For Property To Rent"
+        android:text="Looking For Property To Rent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

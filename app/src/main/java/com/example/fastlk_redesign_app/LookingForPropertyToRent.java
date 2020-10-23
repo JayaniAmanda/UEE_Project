@@ -28,7 +28,7 @@ public class LookingForPropertyToRent extends AppCompatActivity {
         subCatSp = findViewById(R.id.sub_cat_sp);
         locSp = findViewById(R.id.loc_sp);
         subLocSp = findViewById(R.id.sub_loc_sp);
-        conBtn = findViewById(R.id.ok_btn);
+        conBtn = findViewById(R.id.ok_btn_look_rent);
         feedback = findViewById(R.id.textViewfeedback);
         home = findViewById(R.id.home_iv);
 

@@ -21,7 +21,7 @@ public class LookingForPropertyToRentForm  extends AppCompatActivity{
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_buy_something_form);
+            setContentView(R.layout.activity_looking_for_property_to_rent_form);
 
 
             feedback = findViewById(R.id.textViewfeedback);
