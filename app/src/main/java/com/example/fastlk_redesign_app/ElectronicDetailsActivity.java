@@ -20,12 +20,14 @@ public class ElectronicDetailsActivity extends AppCompatActivity {
         ImageSlider imageSlider = findViewById(R.id.elec_slider);
 
         List<SlideModel> slideModels = new ArrayList<>();
-        slideModels.add(new SlideModel(R.drawable.labby,"image 1"));
-        slideModels.add(new SlideModel(R.drawable.labby1,"image 2"));
-        slideModels.add(new SlideModel(R.drawable.labby2,"image 3"));
-        slideModels.add(new SlideModel(R.drawable.labby3,"image 4"));
+        slideModels.add(new SlideModel(R.drawable.iphone1,"image 1"));
+        slideModels.add(new SlideModel(R.drawable.iphone2,"image 2"));
+        slideModels.add(new SlideModel(R.drawable.iphone4,"image 3"));
+       // slideModels.add(new SlideModel(R.drawable.iphone3,"image 4"));
 
         imageSlider.setImageList(slideModels, false);
+
+
 
     }
 }

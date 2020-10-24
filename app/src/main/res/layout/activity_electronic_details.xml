@@ -30,24 +30,24 @@
 
     <TextView
         android:id="@+id/prop_price_tv"
-        android:layout_width="133dp"
-        android:layout_height="34dp"
+        android:layout_width="228dp"
+        android:layout_height="40dp"
         android:layout_marginBottom="116dp"
-        android:text="Rs. 100,000"
+        android:text="Rs. 150,000"
         android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintHorizontal_bias="0.142"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/house_sale_tv"
-        app:layout_constraintVertical_bias="0.082" />
+        app:layout_constraintVertical_bias="0.083" />
 
     <TextView
         android:id="@+id/house_tv"
         android:layout_width="wrap_content"
         android:layout_height="36dp"
-        android:text="House"
+        android:text="Apple iphone 11"
         android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -89,6 +89,7 @@
         android:id="@+id/house_sale_tv"
         android:layout_width="265dp"
         android:layout_height="40dp"
+        android:text="128GB/ TRCSL APPROVED"
         android:textColor="#033205"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -96,7 +97,6 @@
         app:layout_constraintHorizontal_bias="0.178"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/house_tv"
-        app:layout_constraintVertical_bias="0.05"
-        android:text="House for sale at Piliyandala"/>
+        app:layout_constraintVertical_bias="0.05" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
