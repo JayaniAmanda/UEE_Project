@@ -53,15 +53,16 @@ public class LookingForPropertyToRentForm  extends AppCompatActivity{
             });
             awesomeValidation = new AwesomeValidation(ValidationStyle.BASIC);
 
-            awesomeValidation.addValidation(this, R.id.editTextTextPersonName2, RegexTemplate.NOT_EMPTY, R.string.title_req_err);
-            awesomeValidation.addValidation(this, R.id.editTextTextMultiLine2, RegexTemplate.NOT_EMPTY, R.string.des_err);
+            awesomeValidation.addValidation(this, R.id.editTextTextPersonName2, RegexTemplate.NOT_EMPTY, R.string.des_err);
+            awesomeValidation.addValidation(this, R.id.editTextTextMultiLine2, RegexTemplate.NOT_EMPTY, R.string.title_req_err);
             awesomeValidation.addValidation(this, R.id.editTextTextPersonName4, RegexTemplate.NOT_EMPTY, R.string.location_req_err);
 
             submitBtn.setOnClickListener(new View.OnClickListener(){
                 @Override
                 public void onClick(View v) {
                     if (awesomeValidation.validate()) {
-                        Toast.makeText(LookingForPropertyToRentForm.this, "advertisement posted Successfully!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LookingForPropertyToRentForm.this, "Ad Posted!", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(LookingForPropertyToRentForm.this, MainActivity.class));
                     }
                 }
             });

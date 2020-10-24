@@ -72,6 +72,7 @@ public class SellProperty extends AppCompatActivity {
             public void onClick(View v) {
                 if (awesomeValidation.validate()){
                     Toast.makeText(SellProperty.this, "Ad Posted!", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(SellProperty.this, MainActivity.class));
                 }
             }
         });

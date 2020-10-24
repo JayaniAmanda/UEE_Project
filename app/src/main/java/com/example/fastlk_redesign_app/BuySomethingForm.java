@@ -10,19 +10,34 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.basgeekball.awesomevalidation.AwesomeValidation;
+import com.basgeekball.awesomevalidation.ValidationStyle;
+import com.basgeekball.awesomevalidation.utility.RegexTemplate;
+
 public class BuySomethingForm extends AppCompatActivity {
     private ImageView myAccBtn;
+    AwesomeValidation awesomeValidation;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_buy_something_form);
 
+        awesomeValidation = new AwesomeValidation(ValidationStyle.BASIC);
+
+        awesomeValidation.addValidation(this, R.id.editTextTextPersonName2, RegexTemplate.NOT_EMPTY, R.string.des_err);
+        awesomeValidation.addValidation(this, R.id.editTextTextMultiLine2, RegexTemplate.NOT_EMPTY, R.string.title_req_err);
+        awesomeValidation.addValidation(this, R.id.editTextTextPersonName4, RegexTemplate.NOT_EMPTY, R.string.location_req_err);
+
         Button postad = findViewById(R.id.button2);
         postad.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(BuySomethingForm.this, "Successfully posted.", Toast.LENGTH_SHORT).show();
+                if (awesomeValidation.validate()) {
+                    Toast.makeText(BuySomethingForm.this, "Ad Posted!", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(BuySomethingForm.this, MainActivity.class));
+                }
             }
         });
 
