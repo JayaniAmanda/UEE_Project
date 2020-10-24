@@ -27,10 +27,10 @@
     <string name="reconditioned">Reconditioned</string>
     <string name="post_ad">Post Ad</string>
     <string name="mileage">Mileage (km)*</string>
-    <string name="engine_cap">Engine Capacity*</string>
+    <string name="engine_cap">Engine Cap (cc)*</string>
     <string name="des">Description*</string>
-    <string name="negotiatable">Negotiatable</string>
-    <string name="price">Price*</string>
+    <string name="negotiable">Negotiable</string>
+    <string name="price">Price (Rs)*</string>
     <string name="name_req_err">Name is required</string>
     <string name="email_req_err">Email is required</string>
     <string name="phone_req_err">Contact no is required</string>
@@ -56,7 +56,7 @@
     <string name="cat_sel">Choose Category</string>
     <string name="sub_cat">Choose Subcategory</string>
     <string name="loc_sel">Choose Location</string>
-    <string name="sub_loc">Choose Sublocation</string>
+    <string name="sub_loc">Choose Sub location</string>
     <string name="con">Continue</string>
     <string name="cat">Category</string>
     <string name="loc">Location</string>
@@ -65,7 +65,7 @@
     <string name="fuel_ty_sel">Select Fuel Type(s)</string>
     <string name="fuel_ty_err">Fuel type(s) is invalid</string>
     <string name="forgot_pw">Forgot Password?</string>
-    <string name="sign_up_msg">Dont have an account yet?</string>
+    <string name="sign_up_msg">Don\'t have an account yet?</string>
     <string name="sign_up_now">Sign up!</string>
     <string name="look_for_property_to_rent_title">Look for property to rent:</string>
     <string name="SellProperty">Offer A Property For Rent</string>
